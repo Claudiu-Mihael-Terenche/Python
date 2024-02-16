@@ -1,12 +1,11 @@
-'''
 # Python program to illustrate functions
+
 def hello():
 	print('hello')
 	print('hello again')
-hello()
 
-# calling function
-hello()
+
+hello() # calling function
 
 # Python program to illustrate a simple for loop
 
@@ -28,8 +27,9 @@ print(Rodger.attr1)
 Rodger.fun()
 
 # Python program to swap two variables in a single line
-x = 5
-y = 10
+
+x = 5; y = 10
+
 x, y = y, x
+
 print('After swapping values of x and y are', x, y)
-'''
