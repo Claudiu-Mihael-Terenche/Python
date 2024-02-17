@@ -10,16 +10,17 @@ frame.pack()
 entry = tk.Entry(master=frame, relief=SUNKEN, borderwidth=3, width=30)
 entry.grid(row=0, column=0, columnspan=3, ipady=2, pady=2)
 
+
 def myclick(number): entry.insert(tk.END, number)
 
 
 def equal():
-	try:
-		y = str(eval(entry.get()))
-		entry.delete(0, tk.END)
-		entry.insert(0, y)
-	except:
-		tkinter.messagebox.showinfo('Error', 'Syntax error')
+    try:
+        y = str(eval(entry.get()))
+        entry.delete(0, tk.END)
+        entry.insert(0, y)
+    except:
+        tkinter.messagebox.showinfo('Error', 'Syntax error')
 
 
 def clear(): entry.delete(0, tk.END)

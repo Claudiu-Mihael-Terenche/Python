@@ -10,6 +10,6 @@ print(res)
 
 # if element present then return exist otherwise not exist
 # if num in list1:
-	# print('exist')
+# print('exist')
 # else:
-	# print('not exist')
+# print('not exist')

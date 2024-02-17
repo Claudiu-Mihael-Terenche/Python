@@ -9,10 +9,13 @@ hello() # calling function
 
 # Python program to illustrate a simple for loop
 
-for step in range(5): print(step)
+for step in range(5):
+	print(step)
 
 # iteration by for loop on range
-for num in range(0, 10): print(num)
+
+for num in range(0, 10):
+	print(num)
 
 class Dog:
 	attr1 = 'mammal'

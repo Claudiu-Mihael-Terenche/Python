@@ -8,4 +8,4 @@ temp = combinations(list1, 2)
 
 for item in list(temp):
 	idx = idx + 1
-	print ('Combination', idx, ':', item)
+	print('Combination', idx, ':', item)

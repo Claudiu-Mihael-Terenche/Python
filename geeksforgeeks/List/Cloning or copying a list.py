@@ -1,10 +1,10 @@
 import copy
 
-list1 = [1, 2, [3,5], 4]
+list1 = [1, 2, [3, 5], 4]
 
-res1 = copy.copy(list1) # using copy for shallow copy
+res1 = copy.copy(list1)  # using copy for shallow copy
 
-res2 = copy.deepcopy(list1) # using deepcopy
+res2 = copy.deepcopy(list1)  # using deepcopy
 
 print('', res1, '\n', res2)
 

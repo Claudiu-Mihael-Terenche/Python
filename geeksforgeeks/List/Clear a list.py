@@ -1,12 +1,18 @@
-list1 = [1, 2, 3]; list2 = [1, 2, 3]; list3 = [1, 2, 3]; list4 = [1, 2, 3]; list5 = [1, 2, 3]
+list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+list3 = [1, 2, 3]
+list4 = [1, 2, 3]
+list5 = [1, 2, 3]
 
 list1.clear()
-list2 = []
-list3 *= 0
-del list4[:]
-list5 = list5[:0]
 
-print('List after clear:\n', list1, '\n', list2, '\n', list3, '\n', list4, '\n', list5)
+list2 *= 0
+
+del list3[:]
+
+list4 = list4[:0]
+
+print('List after clear:\n', list1, '\n', list2, '\n', list3, '\n', list4)
 
 '''
 # Using clear()

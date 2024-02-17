@@ -2,6 +2,7 @@
 
 from itertools import permutations
 
-comb = permutations([1, 2, 3], 3) # get all combination of [1, 2, 3] of length 3
+comb = permutations([1, 2, 3], 3)  # get all combination of [1, 2, 3] of length 3
 
-for num in comb: print(num)
+for num in comb:
+    print(num)

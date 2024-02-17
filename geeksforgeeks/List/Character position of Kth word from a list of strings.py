@@ -1,4 +1,4 @@
-list1 = ['geekforgeeks', 'is', 'best', 'for', 'geeks']
+list1 = ['geeksforgeeks', 'is', 'best', 'for', 'geeks']
 
 K = 20
 
