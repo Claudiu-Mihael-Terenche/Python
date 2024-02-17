@@ -1,13 +1,12 @@
-list1 = [10, 20, 80, 30, 60, 50, 110, 100, 130, 170]
-
+list1 = [10, 20, 80, 30, 60, 50, 110, 100, 130, 110, 170]
 x = 110
 
-res = 0
+res = []
 for i in range(len(list1)):
-	if list1[i] == x:
-		res = i
+    if list1[i] == x:
+        res.append(i)
 
-print(res)
+print(*res)
 
 '''
 # Searching an element in a list/array in python

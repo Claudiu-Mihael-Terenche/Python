@@ -1,5 +1,4 @@
 import copy
-
 list1 = [1, 2, [3, 5], 4]
 
 res1 = copy.copy(list1)  # using copy for shallow copy

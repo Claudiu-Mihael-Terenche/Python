@@ -1,5 +1,4 @@
 list1 = [(4, 5, 6, 3), (5, 6, 6, 9), (1, 3, 5, 6), (6, 6, 7, 8)]
-
 K = 6
 
 res = [idx for idx in list1 if (K, K) not in zip(idx, idx[1:])]

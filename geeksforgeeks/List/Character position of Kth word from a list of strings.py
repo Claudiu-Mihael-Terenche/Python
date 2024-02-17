@@ -1,5 +1,4 @@
 list1 = ['geeksforgeeks', 'is', 'best', 'for', 'geeks']
-
 K = 20
 
 res = [item[0] for sub in enumerate(list1) for item in enumerate(sub[1])]

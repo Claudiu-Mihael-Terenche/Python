@@ -1,5 +1,4 @@
 from collections import Counter
-
 list1 = [1, 2, 2, 5, 8, 4, 4, 8]
 
 res1 = len(set(list1))

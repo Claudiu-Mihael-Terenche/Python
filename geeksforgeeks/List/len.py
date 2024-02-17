@@ -1,5 +1,4 @@
 # Python len()
-
 list1 = [10, 20, 30]
 
 res = len(list1)

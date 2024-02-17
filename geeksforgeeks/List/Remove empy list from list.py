@@ -6,7 +6,8 @@ res2 = [num for num in list1 if num != []]
 
 list3 = [5, 6, [], 3, [], [], 9]
 
-while [] in list3: list3.remove([])
+while [] in list3:
+    list3.remove([])
 
 res4 = [num for i, num in enumerate(list1) if num != []]
 
@@ -56,7 +57,7 @@ list3 = [5, 6, [], 3, [], [], 9]
 # remove empty list from list using remove()
 
 while [] in list3:
-	list3.remove([])
+list3.remove([])
 
 # printing result
 # print('List after empty list removal:', list3)

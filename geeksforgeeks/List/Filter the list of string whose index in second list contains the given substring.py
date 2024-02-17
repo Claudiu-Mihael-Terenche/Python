@@ -1,6 +1,5 @@
 list1 = ['Gfg', 'is', 'not', 'best', 'and', 'not', 'for', 'CS']
-list2 = ['Its ok', 'all ok', 'no', 'looks ok', 'ok', 'wrong', 'ok', 'thats ok']
-
+list2 = ['It is ok', 'all ok', 'no', 'looks ok', 'ok', 'wrong', 'ok', 'that is ok']
 sub_str = 'ok'
 
 res = [item1 for item1, item2 in zip(list1, list2) if sub_str in item2]

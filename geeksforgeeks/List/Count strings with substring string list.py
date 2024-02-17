@@ -1,5 +1,4 @@
 list1 = ['GeeksforGeeks', 'Geeky', 'Computers', 'Algorithms']
-
 subs = 'Geek'
 
 res = len([item for item in list1 if subs in item])

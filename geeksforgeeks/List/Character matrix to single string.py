@@ -1,5 +1,4 @@
 from itertools import chain
-
 list1 = [['g', 'f', 'g'], ['i', 's'], ['b', 'e', 's', 't']]
 
 res1 = ''.join(chain(*list1))

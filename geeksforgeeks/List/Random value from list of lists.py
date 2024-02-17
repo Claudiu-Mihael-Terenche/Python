@@ -1,8 +1,6 @@
 from itertools import chain
 import random
-
 list1 = [[4, 5, 5], [2, 7, 4], [8, 6, 3]]
-
 random_num = [0, 1, 2]
 
 res1 = random.choice(list1[random.choice(random_num)])

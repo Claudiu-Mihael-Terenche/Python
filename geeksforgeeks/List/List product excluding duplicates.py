@@ -1,9 +1,7 @@
 import math
-
 # def product(list):
-	# s = set(list)
-	# return (math.prod(s))
-
+# s = set(list)
+# return (math.prod(s))
 list1 = [1, 3, 5, 6, 3, 5, 6, 1]
 
 list1 = set(list1)

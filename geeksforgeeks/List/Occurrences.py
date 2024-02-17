@@ -1,8 +1,13 @@
-import operator as op
-
 list1 = ['a', 'd', 'd', 'c', 'a', 'b', 'b', 'a', 'c', 'd', 'e']
-
 item = 'a'
+
+res = list1.count(item)
+
+print(item, 'occurred', res, 'times')
+
+'''
+import operator as op
+from collections import Counter
 
 occurrence = {item: list1.count(item) for item in list1}
 
@@ -10,13 +15,12 @@ res1 = occurrence.get(item)
 
 print(item, 'has occurred', res1, 'times')
 
+
 def countItem(list1, item):
-	return list1.count(item)
+    return list1.count(item)
 
 
 print('{} has occurred {} times'.format(item, countItem(list1, item)))
-
-from collections import Counter
 
 items = Counter(list1)
 
@@ -24,7 +28,6 @@ print('{} has occurred {} times'.format(item, items[item]))
 
 print(f'{item} has occurred {op.countOf(list1, item)} times')
 
-'''
 # Python code to count the number of occurrences using dictionary comprehension
 
 list1 = ['a', 'd', 'd', 'c', 'a', 'b', 'b', 'a', 'c', 'd', 'e']
@@ -39,7 +42,7 @@ print(item, 'has occurred', res1, 'times')
 
 # Version 2: using count()
 def countItem(list1, item):
-	return list1.count(item)
+return list1.count(item)
 
 
 # driver Code

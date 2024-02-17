@@ -1,5 +1,4 @@
 from functools import reduce
-
 list1 = [['a', 'b', 1, 2], ['c', 'd', 3, 4], ['e', 'f', 5, 6]]
 
 res1 = {tuple(sub[:2]): tuple(sub[2:]) for sub in list1}
@@ -8,9 +7,11 @@ res2 = dict()
 for sub in list1:
     res2[tuple(sub[:2])] = tuple(sub[2:])
 
+
 def combine_dicts(dict1, dict2):
-	dict1.update(dict2)
-	return dict1
+    dict1.update(dict2)
+    return dict1
+
 
 res3 = reduce(combine_dicts, [{tuple(sub[:2]): tuple(sub[2:])} for sub in list1])
 
@@ -61,8 +62,8 @@ from functools import reduce
 # define function to combine dictionaries
 
 def combine_dicts(dict1, dict2):
-	dict1.update(dict2)
-	return dict1
+dict1.update(dict2)
+return dict1
 
 # use reduce to apply combine_dicts to all nested dictionaries
 res3 = reduce(combine_dicts, [{tuple(sub[:2]): tuple(sub[2:])} for sub in list1])

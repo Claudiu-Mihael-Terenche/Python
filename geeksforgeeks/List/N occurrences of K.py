@@ -1,7 +1,5 @@
 list1 = [(4, 5, 6, 4, 4), (4, 4, 3), (4, 4, 4), (3, 4, 9)]
-
 K = 4
-
 N = 3
 
 res = [item for item in list1 if item.count(K) == N]

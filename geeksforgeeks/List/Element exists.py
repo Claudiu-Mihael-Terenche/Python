@@ -1,7 +1,5 @@
 # Using the "in" statement
-
 list1 = [1, 6, 3, 5, 3, 4]
-
 num = 7
 
 res = num in list1

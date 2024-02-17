@@ -1,20 +1,28 @@
 list1 = [4, 5, 6, 7, 3, 9]
-
 start, end = 7, 10
 
 res1 = any(start <= num < end for num in list1)
-
 res2 = all(start <= num < end for num in list1)
 
 print('Does list contain: \nany element in range:\n', res1, '\nall elements in range:\n', res2)
 
-res3 = len([num for num in list1 if start > num >= end]) == 0
+resLenIn = len([num for num in list1 if start <= num < end])
 
-res4 = res3 == len(list1)
+res3 = resLenIn != 0
 
-print ('Does list contain: \nall elements in range:\n', res3, '\nall elements in range:\n', res4)
+res4 = resLenIn == len(list1)
 
-def in_range(num): return start <= num < end
+resLenOut = len([num for num in list1 if start > num >= end])
+
+res5 = resLenOut == 0
+
+print('Does list contain: \nany elements in range:\n', res3, '\nall elements in range:\n', res4, '\nall elements in '
+                                                                                                 'range:\n', res5)
+
+
+def in_range(num):
+    return start <= num < end
+
 
 filtered_list = list(filter(in_range, list1))
 

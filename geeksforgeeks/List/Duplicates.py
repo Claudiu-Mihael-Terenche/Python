@@ -1,5 +1,4 @@
 from collections import Counter
-
 list1 = [1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
 
 res1 = list(set([num for num in list1 if list1.count(num) > 1]))

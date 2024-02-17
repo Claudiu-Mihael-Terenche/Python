@@ -1,14 +1,10 @@
 from collections import Counter
-
 list1 = [4, 6, 4, 3, 3, 4, 3, 7, 8, 8]
+K = 2
 
-K1 = 2
+res1 = [num for num, cnt in Counter(list1).items() if cnt > K]
 
-res1 = [num for num, cnt in Counter(list1).items() if cnt > K1]
-
-freq_dict = Counter(list1)
-
-res2 = list(filter(lambda num: freq_dict[num] > K1, freq_dict))
+res2 = list(filter(lambda num: Counter(list1)[num] > K, Counter(list1)))
 
 print('The required elements:\n', *res1, '\n', *res2)
 

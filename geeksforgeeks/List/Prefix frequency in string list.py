@@ -1,5 +1,4 @@
 list1 = ['gfgisbest', 'geeks', 'gfgfreak', 'gfgCS', 'Gcourses']
-
 sub = 'gfg'
 
 res = sum(sub.startswith(sub) for sub in list1)

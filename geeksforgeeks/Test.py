@@ -24,3 +24,6 @@ class Dog:
 Rodger = Dog()
 print(Rodger.attr1)
 Rodger.fun()
+
+for num in range(7, 10):
+    print(num)

@@ -1,7 +1,5 @@
 from itertools import combinations
-
 list1 = ['GFG', [5, 4], 'is', ['best', 'good', 'better', 'average']]
-
 idx = 0
 
 temp = combinations(list1, 2)
