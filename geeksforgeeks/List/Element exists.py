@@ -6,8 +6,10 @@ res = num in list1
 
 print(res)
 
+'''
 # if element present then return exist otherwise not exist
-# if num in list1:
-# print('exist')
-# else:
-# print('not exist')
+if num in list1:
+print('exist')
+else:
+print('not exist')
+'''

@@ -1,15 +1,13 @@
 import re
-
 list1 = ['Good at 4', 'Wake at 7', 'Work till 6', 'Sleep at 11']
+suborder_list = ['6', '7', '4', '11']
 
-subord_list = ['6', '7', '4', '11']
+temp_dict = {item_d: key for key, item_d in enumerate(suborder_list)}
 
-temp_dict = {itemd: key for key, itemd in enumerate(subord_list)}
+temp_list = sorted([[item_l, temp_dict[re.search('(\\d+)$', item_l).group()]]
+                    for item_l in list1], key=lambda x: x[1])
 
-temp_list = sorted([[iteml, temp_dict[re.search("(\d+)$", iteml).group()]] \
-                    for iteml in list1], key=lambda x: x[1])
-
-res = [iteml for iteml in list(zip(*temp_list))[0]]
+res = [item_l for item_l in list(zip(*temp_list))[0]]
 
 print('The sorted list:', res)
 
@@ -23,15 +21,15 @@ list1 = ['Good at 4', 'Wake at 7', 'Work till 6', 'Sleep at 11']
 
 # initializing substring list
 
-subord_list = ['6', '7', '4', '11']
+suborder_list = ['6', '7', '4', '11']
 
-temp_dict = {itemd: key for key, itemd in enumerate(subord_list)} # creating inverse mapping with index
+temp_dict = {item_d: key for key, item_d in enumerate(suborder_list)} # creating inverse mapping with index
 
 # custom sorting
-temp_list = sorted([[iteml, temp_dict[re.search("(\d+)$", iteml).group()]] \
-                    for iteml in list1], key=lambda x: x[1])
+temp_list = sorted([[item_l, temp_dict[re.search('(\\d+)$', item_l).group()]]
+                    for item_l in list1], key=lambda x: x[1])
 
-res = [iteml for iteml in list(zip(*temp_list))[0]] # compiling result
+res = [item_l for item_l in list(zip(*temp_list))[0]] # compiling result
 
 print('The sorted list:', res)
 '''

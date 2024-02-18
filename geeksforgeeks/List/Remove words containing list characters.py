@@ -1,12 +1,9 @@
-from itertools import groupby
-
 list1 = ['gfg', 'is', 'best', 'for', 'geeks']
-
 char_list = ['g', 'o']
 
 res = [item for item in list1 if all(ch not in item for ch in char_list)]
 
-print ('The filtered strings are:', res)
+print('The filtered strings are:', res)
 
 '''
 # Python3 code to remove words containing list characters using list comprehension + all()

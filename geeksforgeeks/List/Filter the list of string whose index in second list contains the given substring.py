@@ -12,7 +12,7 @@ print('The extracted list:', res)
 # initializing list
 
 list1 = ['Gfg', 'is', 'not', 'best', 'and', 'not', 'for', 'CS']
-list2 = ['Its ok', 'all ok', 'no', 'looks ok', 'ok', 'wrong', 'ok', 'thats ok']
+list2 = ['It is ok', 'all ok', 'no', 'looks ok', 'ok', 'wrong', 'ok', 'that is ok']
 
 # printing original lists
 # print('The original list 1 is:', str(list1))

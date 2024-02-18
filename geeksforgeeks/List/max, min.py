@@ -1,4 +1,5 @@
-a = 2; b = 4
+a = 2
+b = 4
 
 max1 = max(a, b)
 min1 = min(a, b)

@@ -1,7 +1,5 @@
 list1 = ['G', 'F', 'G', 'I', 'S', 'B', 'E', 'S', 'T']
-
 repl_chr = '$'
-
 ret_chr = 'G'
 
 res = [item if item == ret_chr else repl_chr for item in list1]
@@ -22,7 +20,7 @@ list1 = ['G', 'F', 'G', 'I', 'S', 'B', 'E', 'S', 'T']
 
 repl_chr = '$'
 
-ret_chr = 'G' # initializing retain chararter
+ret_chr = 'G' # initializing retain character
 
 # list comprehension to remake list after replacement
 res = [item if item == ret_chr else repl_chr for item in list1]

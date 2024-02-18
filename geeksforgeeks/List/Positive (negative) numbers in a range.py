@@ -34,12 +34,12 @@ print('Positive numbers', *pos_nos1, '\nNegative numbers', *neg_nos1)
 # iterating each number in list
 
 for pos_nos2 in range(start, end + 1):
-	if pos_nos2 > 0: # checking condition
-		print(pos_nos2, end=' ')
+if pos_nos2 > 0: # checking condition
+print(pos_nos2, end=' ')
 
 print('\r')
 
 for neg_nos2 in range(start, end + 1):
-	if neg_nos2 < 0: # checking condition
-		print(neg_nos2, end=' ')
+if neg_nos2 < 0: # checking condition
+print(neg_nos2, end=' ')
 '''

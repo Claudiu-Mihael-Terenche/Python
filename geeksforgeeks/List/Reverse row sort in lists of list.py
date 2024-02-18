@@ -2,7 +2,8 @@ list1 = [[4, 1, 6], [7, 8], [4, 10, 8]]
 
 res1 = [sorted(sub, reverse=True) for sub in list1]
 
-for num in list1: num.sort(reverse=True)
+for num in list1:
+    num.sort(reverse=True)
 
 print('The reverse sorted matrix is:\n', res1, '\n', list1)
 

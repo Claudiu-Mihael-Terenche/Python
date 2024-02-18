@@ -1,26 +1,22 @@
 import itertools
 from itertools import product
-from itertools import permutations
+list1 = ['b', 'c', 'd']
+list2 = [1, 4, 9]
 
-list1 = ['b', 'c', 'd']; list2 = [1, 4, 9]
+res1 = list(list(zip(list1, item)) for item in product(list2, repeat=len(list1)))
 
-unique_combinations = []
+res2 = []
 
-unique_combinations1 = list(list(zip(list1, item)) for item in product(list2, repeat = len(list1)))
+permute = itertools.permutations(list1, len(list2))
 
-print(unique_combinations1)
+for comb in permute:
+    zipped = zip(comb, list2)
+    res2.append(list(zipped))
 
-unique_combinations2 = []
-
-permut = itertools.permutations(list1, len(list2))
-
-for comb in permut:
-	zipped = zip(comb, list2)
-	unique_combinations2.append(list(zipped))
-
-print(unique_combinations2)
+print('', res1, '\n', res2)
 
 '''
+from itertools import permutations
 # Python program for unique combination of two lists using zip() and product() of itertools
 
 # import itertools package
@@ -49,12 +45,12 @@ from itertools import permutations
 
 unique_combinations2 = []
 
-permut = itertools.permutations(list1, len(list2)) # getting all permutations of list1 with length of list2
+permute = itertools.permutations(list1, len(list2)) # getting all permutations of list1 with length of list2
 
 # zip() is called to pair each permutation and shorter list element into combination
-for comb in permut:
-	zipped = zip(comb, list2)
-	unique_combinations2.append(list(zipped))
+for comb in permute:
+zipped = zip(comb, list2)
+unique_combinations2.append(list(zipped))
 
 print(unique_combinations2)
 '''

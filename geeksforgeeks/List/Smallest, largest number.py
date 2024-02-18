@@ -1,5 +1,4 @@
-# Python program to find smallest number in a list using min() method and max() method
-
+# Python program to find the smallest number in a list using min() method and max() method
 list1 = [10, 20, 1, 45, 99]
 
 res1 = min(list1)

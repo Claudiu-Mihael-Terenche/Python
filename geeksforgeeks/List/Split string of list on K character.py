@@ -1,5 +1,4 @@
 list1 = ['Gfg is best', 'for Geeks', 'Preparing']
-
 K = ' '
 
 res1 = [word for phrase in list1 for word in phrase.split(K)]

@@ -64,7 +64,7 @@ items = Counter(list1)
 
 print('{} has occurred {} times'.format(item, items[item]))
 
-# Version 4: using countof()
+# Version 4: using countOf()
 import operator as op
 
 # declaring the list

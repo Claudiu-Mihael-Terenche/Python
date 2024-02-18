@@ -1,9 +1,9 @@
 # Python3 code to group sublist by another list using loop + generator(yield)
 
-def grp_item(list1, list2):  # helper function
+def grp_item(list01, list02):  # helper function
     temp = []
-    for item in list1:
-        if item in list2:
+    for item in list01:
+        if item in list02:
             if temp:
                 yield temp
                 temp = []

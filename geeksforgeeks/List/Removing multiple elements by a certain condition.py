@@ -20,9 +20,10 @@ list4 = [11, 5, 17, 18, 23, 50]
 
 unwanted = [0, 3, 4]
 
-for num in sorted(unwanted, reverse=True): del list4[num]
+for num in sorted(unwanted, reverse=True):
+    del list4[num]
 
-print (*list4)
+print(*list4)
 
 '''
 # Python program to remove multiple elements from a list using list comprehension
@@ -70,7 +71,7 @@ list4 = [11, 5, 17, 18, 23, 50]
 unwanted = [0, 3, 4] # given index of elements, removes 11, 18, 23
 
 for num in sorted(unwanted, reverse = True):
-	del list4[num]
+del list4[num]
 
 print (*list4) # printing modified list
 '''
