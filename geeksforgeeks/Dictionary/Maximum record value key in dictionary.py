@@ -1,6 +1,6 @@
-dict1 = {'gfg' : {'Manjeet' : 5, 'Himani' : 10},
-         'is' : {'Manjeet' : 8, 'Himani' : 9},
-         'best' : {'Manjeet' : 10, 'Himani' : 15}}
+dict1 = {'gfg': {'Manjeet': 5, 'Himani': 10},
+         'is': {'Manjeet': 8, 'Himani': 9},
+         'best': {'Manjeet': 10, 'Himani': 15}}
 
 key = 'Himani'
 

@@ -1,5 +1,4 @@
-dict1 = {'Gfg' : 1, 'is' : 2, 'best' : 3, 'for' : 4, 'geeks' : 5, 'CS' : 6}
-
+dict1 = {'Gfg': 1, 'is': 2, 'best': 3, 'for': 4, 'geeks': 5, 'CS': 6}
 K = 2
 
 res = [dict(list(dict1.items())[i:i + K]) for i in range(0, len(dict1), K)]

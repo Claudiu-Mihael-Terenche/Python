@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, date, timedelta
 
 day_num = '339'
 
@@ -10,11 +10,9 @@ res1 = datetime.strptime(year + '-' + day_num, '%Y-%j').strftime('%m-%d-%Y')
 
 print('Resolved date:', res1)
 
-from datetime import datetime, date, timedelta
+start_date = date(int(year), 1, 1)
 
-strt_date = date(int(year), 1, 1)
-
-res2 = (strt_date + timedelta(days=int(day_num) - 1)).strftime('%m-%d-%Y')
+res2 = (start_date + timedelta(days=int(day_num) - 1)).strftime('%m-%d-%Y')
 
 print('Resolved date:', res2)
 
@@ -46,7 +44,7 @@ print('Resolved date:', res1)
 from datetime import datetime, date, timedelta
 
 # initializing day number
-# day_num = "339"
+# day_num = '339'
 
 # print day number
 # print("The day number : " + str(day_num))
@@ -54,16 +52,12 @@ from datetime import datetime, date, timedelta
 # adjusting day num
 # day_num = day_num.rjust(3 + len(day_num), '0')
 
-# Initialize year
-# year = "2020"
+# year = '2020'
 
-# Initializing start date
-
-strt_date = date(int(year), 1, 1)
+start_date = date(int(year), 1, 1)
 
 # converting to date
 res2 = (strt_date + timedelta(days=int(day_num) - 1)).strftime('%m-%d-%Y')
 
 print('Resolved date:', res2)
-
 '''

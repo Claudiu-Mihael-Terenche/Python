@@ -1,10 +1,12 @@
 from itertools import chain
-
 dict1 = {'Gfg': 1, 'is': 3, 'Best': 2}
 
-res1 = list(dict1.keys()) + list(dict1.values())
+keys = list(dict1.keys())
+values = list(dict1.values())
 
-res2 = list(chain(dict1.keys(), dict1.values()))
+res1 = keys + values
+
+res2 = list(chain(keys, values))  # ???
 
 print('The ordered keys and values:\n', res1, '\n', res2)
 

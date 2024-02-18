@@ -1,23 +1,21 @@
-def mirrorChars(input, k):
+def mirror_chars(input0, k):
+    original = 'abcdefghijklmnopqrstuvwxyz'  # create dictionary
 
-    original = 'abcdefghijklmnopqrstuvwxyz' # create dictionary
+    reverse = original[::-1]  # 'zyxwvutsrqponmlkjihgfedcba'
 
-    reverse = original[::-1] # 'zyxwvutsrqponmlkjihgfedcba'
+    dict_chars = dict(zip(original, reverse))
 
-    dictChars = dict(zip(original, reverse))
-
-    prefix = input[0:k - 1] # separate out string after length k to change characters in mirror
-    suffix = input[k - 1:]
+    prefix = input0[0:k - 1]  # separate out string after length k to change characters in mirror
+    suffix = input0[k - 1:]
 
     mirror = ''
 
-    for i in range(0, len(suffix)): # change into mirror
-        mirror = mirror + dictChars[suffix[i]]
-    print(prefix + mirror) # concat prefix and mirrored part
-
+    for i in range(len(suffix)):  # change into mirror
+        mirror = mirror + dict_chars[suffix[i]]
+    print(prefix + mirror)  # concat prefix and mirrored part
 
 
 if __name__ == '__main__':
-    input = 'paradox'
-    k = 3
-    mirrorChars(input, k)
+    input1 = 'paradox'
+    k1 = 3
+    mirror_chars(input1, k1)

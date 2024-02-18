@@ -5,7 +5,8 @@ res1 = dict(zip(dict1['month'], dict1['name']))
 res2 = {dict1['month'][i]: dict1['name'][i] for i in range(len(dict1['month']))}
 
 res3 = {}
-for i in range(len(dict1['month'])): res3[dict1['month'][i]] = dict1['name'][i]
+for i in range(len(dict1['month'])):
+    res3[dict1['month'][i]] = dict1['name'][i]
 
 print('Flattened dictionary:\n', res1, '\n', res2, '\n', res3)
 

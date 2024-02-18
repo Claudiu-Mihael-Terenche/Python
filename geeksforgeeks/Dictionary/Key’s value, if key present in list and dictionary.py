@@ -1,17 +1,18 @@
 list1 = ['Gfg', 'is', 'Good', 'for', 'Geeks']
-
 dict1 = {'Gfg': 2, 'is': 4, 'Best': 6}
-
 K = 'Gfg'
 
 res1 = None
-if K in list1 and K in dict1: res1 = dict1.get(K)
+if K in list1 and K in dict1:
+	res1 = dict1.get(K)
 
 res2 = None
-if K in dict1.keys() and K in list1: res2 = dict1[K]
+if K in dict1.keys() and K in list1:
+	res2 = dict1[K]
 
 res3 = None
-if K in set(list1).intersection(dict1): res3 = dict1[K]
+if K in set(list1).intersection(dict1):
+	res3 = dict1[K]
 
 res4 = None
 for item in list1:
@@ -20,7 +21,8 @@ for item in list1:
 		break
 
 res5 = None
-if all(K in sub for sub in [dict1, list1]): res5 = dict1[K]
+if all(K in sub for sub in [dict1, list1]):
+	res5 = dict1[K]
 
 print('Extracted value:\n', res1, '\n', res2, '\n', res3, '\n', res4, '\n', res5)
 

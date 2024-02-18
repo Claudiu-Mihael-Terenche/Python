@@ -1,4 +1,4 @@
-'''
+"""
 Dictionary Methods
 Here is a list of in-built dictionary functions with their description.
 You can use these functions to operate on a dictionary.
@@ -19,4 +19,4 @@ dict.has_key(key)	returns true if the dictionary contains the specified key.
 dict.get(key, default = “None”)	used to get the value specified for the passed key.
 
 **dict # unpacking dictionary
-'''
+"""

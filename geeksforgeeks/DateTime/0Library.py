@@ -1,5 +1,5 @@
-'''
-%Y	Year in four digits	2018, 2019 etc
+"""
+%Y	Year in four digits	2018, 2019 etc.
 %m	Month as a zero-padded decimal number.	01, 02, …, 12
 %b	Month as locale’s abbreviated name.	Jan, Feb, …, Dec
 %d	Day of the month as a zero-padded decimal number.	01, 02, …, 31
@@ -11,4 +11,4 @@
 %p	Locale’s equivalent of either AM or PM	AM, PM, am, pm
 %z	UTC offset in the form ±HHMM	+0000, -0400, +0530
 %a	Abbreviated weekday name.	Sun, Mon, …
-'''
+"""

@@ -1,9 +1,9 @@
 from collections import defaultdict
-
 list1 = [4, 6, 6, 4, 2, 2, 4, 4, 8, 5, 8]
 
 res = defaultdict(list)
-for ele in list1: res[ele].append(ele)
+for ele in list1:
+    res[ele].append(ele)
 
 print('Similar grouped dictionary:', dict(res))
 

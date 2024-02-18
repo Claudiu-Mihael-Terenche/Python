@@ -1,7 +1,8 @@
 list1 = [2, 4, 6, 8, 3, 9, 12, 15, 16, 18]
 
 res = dict()
-for idx in range(1, max(list1) + 1): res[idx] = sum(key % idx == 0 for key in list1)
+for idx in range(1, max(list1) + 1):
+    res[idx] = sum(key % idx == 0 for key in list1)
 
 print('The constructed dictionary:', res)
 

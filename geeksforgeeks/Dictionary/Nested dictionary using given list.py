@@ -1,9 +1,9 @@
 dict1 = {'Gfg': 4, 'is': 5, 'best': 9}
-
 list1 = [8, 3, 2]
 
 res1 = {}
-for key, ele in zip(list1, dict1.items()): res1[key] = dict([ele])
+for key, ele in zip(list1, dict1.items()):
+    res1[key] = dict([ele])
 
 res2 = {idx: {key: dict1[key]} for idx, key in zip(list1, dict1)}
 

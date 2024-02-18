@@ -1,5 +1,4 @@
 from collections import defaultdict
-
 dict1 = {'gfg': [1, 2, 3], 'is': [1, 4], 'best': [4, 2]}
 
 res = defaultdict(list)

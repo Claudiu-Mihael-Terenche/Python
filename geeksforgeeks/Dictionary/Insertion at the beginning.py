@@ -1,9 +1,8 @@
 from collections import OrderedDict
-
 dict1 = OrderedDict([('akshat', '1'), ('nikhil', '2')])
 dict2 = OrderedDict([('manjeet', '4'), ('akash', '4')])
 
-both = OrderedDict(list(dict2.items()) + list(dict1.items())) # adding in beginning of dict
+both = OrderedDict(list(dict2.items()) + list(dict1.items()))  # adding in a beginning of dict
 
 print('Resultant dictionary:', both)
 
@@ -29,7 +28,7 @@ print('Resultant dictionary:', both)
 # from collections import OrderedDict
 
 # Initialising ordered_dict
-# iniordered_dict = OrderedDict([('akshat', '1'), ('nikhil', '2')])
+# inordered_dict = OrderedDict([('akshat', '1'), ('nikhil', '2')])
 
 # Inserting items in starting of dict
 

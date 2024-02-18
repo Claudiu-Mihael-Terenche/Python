@@ -1,6 +1,6 @@
-dict = {'Gfg': [5, 7, 5, 4, 5], 'is': [6, 7, 4, 3, 3], 'Best': [9, 9, 6, 5, 5]}
+dict1 = {'Gfg': [5, 7, 5, 4, 5], 'is': [6, 7, 4, 3, 3], 'Best': [9, 9, 6, 5, 5]}
 
-max_key = sorted(dict, key=lambda ele: len(set(dict[ele])), reverse=True)[0]
+max_key = sorted(dict1, key=lambda ele: len(set(dict1[ele])), reverse=True)[0]
 
 print('Key with maximum unique values:', max_key)
 

@@ -1,15 +1,14 @@
-dict1 = {'Gfg' : 4, 'is' : 2, 'best' : 3, 'for' : 'geeks'}
-
+dict1 = {'Gfg': 4, 'is': 2, 'best': 3, 'for': 'geeks'}
 K = 3
 
-res1 = {key: val for key, val in dict1.items() if type(val) != int or val > K}
+res1 = {key: val for key, val in dict1.items() if type(val) != int or val > K}  # ???
 
 res2 = {key: val for key, val in dict1.items() if not isinstance(val, int) or val > K}
 
 res3 = {}
 for key, val in dict1.items():
-	if type(val) != int or val > K:
-		res3[key] = val
+    if type(val) != int or val > K:  # ???
+        res3[key] = val
 
 print('Values greater than K:\n', res1, '\n', res2, '\n', res3)
 
@@ -74,8 +73,8 @@ res2 = {key: val for key, val in dict1.items() if not isinstance(val, int) or va
 
 res3 = {}
 for key, val in dict1.items():
-	if type(val) != int or val > K:
-		res3[key] = val
+if type(val) != int or val > K:
+res3[key] = val
 
 print('Values greater than K:\n', res1, '\n', res2, '\n', res3)
 '''

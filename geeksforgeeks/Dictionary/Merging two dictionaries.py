@@ -1,4 +1,5 @@
-dict1 = {'x': 10, 'y': 8}; dict2 = {'a': 6, 'b': 4}
+dict1 = {'x': 10, 'y': 8}
+dict2 = {'a': 6, 'b': 4}
 
 dict31 = dict1 | dict2
 
@@ -44,9 +45,9 @@ dict32 = {**dict1, **dict2}
 # print(dict32)
 
 # def merge_dictionaries(dict1, dict2):
-	# merged_dict = dict1.copy()
-	# merged_dict.update(dict2)
-	# return merged_dict
+# merged_dict = dict1.copy()
+# merged_dict.update(dict2)
+# return merged_dict
 
 # Driver code
 # dict1 = {'x': 10, 'y': 8}
@@ -60,7 +61,7 @@ dict33.update(dict2)
 
 # Python code to merge dict using update() method
 # def Merge(dict1, dict2):
-	# return(dict2.update(dict1))
+# return(dict2.update(dict1))
 
 
 # Driver code

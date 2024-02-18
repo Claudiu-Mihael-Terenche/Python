@@ -1,7 +1,8 @@
 list1 = [['a', 'b', 1, 2], ['c', 'd', 3, 4], ['e', 'f', 5, 6]]
 
 res1 = dict()
-for sub in list1: res1[tuple(sub[:2])] = tuple(sub[2:])
+for sub in list1:
+	res1[tuple(sub[:2])] = tuple(sub[2:])
 
 res2 = {tuple(sub[:2]): tuple(sub[2:]) for sub in list1}
 

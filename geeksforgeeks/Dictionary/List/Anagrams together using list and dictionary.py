@@ -1,23 +1,23 @@
-def allAnagram(input):
+def all_anagram(input0):
+    dict0 = {}
 
-    dict = {}
-
-    for strVal in input:
+    for strVal in input0:
         key = ''.join(sorted(strVal))
-        if key in dict.keys():
-            dict[key].append(strVal)
+        if key in dict0.keys():
+            dict0[key].append(strVal)
         else:
-            dict[key] = []
-            dict[key].append(strVal)
+            dict0[key] = []
+            dict0[key].append(strVal)
     output = ''
 
-    for key, value in dict.items():
+    for key, value in dict0.items():
         output = output + ' '.join(value) + ' '
     return output
 
+
 if __name__ == '__main__':
-    input = ['cat', 'dog', 'tac', 'god', 'act']
-    print(allAnagram(input))
+    input1 = ['cat', 'dog', 'tac', 'god', 'act']
+    print(all_anagram(input1))
 
 '''
 # Function to return all anagrams together

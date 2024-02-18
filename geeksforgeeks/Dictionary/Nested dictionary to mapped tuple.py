@@ -1,5 +1,4 @@
 from collections import defaultdict
-
 dict1 = {'gfg': {'x': 5, 'y': 6}, 'is': {'x': 1, 'y': 4}, 'best': {'x': 8, 'y': 3}}
 
 res = defaultdict(tuple)
