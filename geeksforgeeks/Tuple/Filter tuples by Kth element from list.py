@@ -1,7 +1,5 @@
 list1 = [('GFg', 5, 9), ('is', 4, 3), ('best', 10, 29)]
-
 check_list = [4, 2, 8, 10]
-
 K = 1
 
 res1 = [sub for sub in list1 if sub[K] in check_list]

@@ -1,41 +1,42 @@
 from collections import defaultdict
+from itertools import groupby
 
 list1 = [(5, 6), (5, 7), (6, 8), (6, 10), (7, 13)]
 
 res1 = []
 for sub in list1:
-	if res1 and res1[-1][0] == sub[0]:
-		res1[-1].extend(sub[1:])
-	else:
-		res1.append([ele for ele in sub])
+    if res1 and res1[-1][0] == sub[0]:
+        res1[-1].extend(sub[1:])
+    else:
+        res1.append([ele for ele in sub])
 res1 = list(map(tuple, res1))
 
 mapp = defaultdict(list)
 for key, val in list1:
-	mapp[key].append(val)
+    mapp[key].append(val)
 res2 = [(key, *val) for key, val in mapp.items()]
 
 temp_dict = {}
-for x in list1: temp_dict[x[0]] = temp_dict.get(x[0], []) + list(x[1:])
+for x in list1:
+    temp_dict[x[0]] = temp_dict.get(x[0], []) + list(x[1:])
 
 res3 = [(k,) + tuple(v) for k, v in temp_dict.items()]
 
-from itertools import groupby
-
 res4 = []
-for k, g in groupby(list1, key=lambda x: x[0]):
-	values = [v for _, v in g]
-	res4.append((k, *values))
+for k, g in groupby(list1, key=lambda x4: x4[0]):
+    values = [v for _, v in g]
+    res4.append((k, *values))
 
-def join_tuples(list1, index):
-	if index == len(list1) - 1:
-		return list1
-	elif list1[index][0] == list1[index + 1][0]:
-		list1[index] += list1[index + 1][1:]
-		list1.pop(index + 1)
-		return join_tuples(list1, index)
-	else:
-		return join_tuples(list1, index + 1)
+
+def join_tuples(list01, index):
+    if index == len(list01) - 1:
+        return list01
+    elif list01[index][0] == list01[index + 1][0]:
+        list01[index] += list01[index + 1][1:]
+        list01.pop(index + 1)
+        return join_tuples(list01, index)
+    else:
+        return join_tuples(list01, index + 1)
 
 
 res5 = join_tuples(list1, 0)
@@ -54,10 +55,10 @@ list1 = [(5, 6), (5, 7), (6, 8), (6, 10), (7, 13)]
 
 res1 = []
 for sub in list1:
-	if res1 and res1[-1][0] == sub[0]:
-		res1[-1].extend(sub[1:])
-	else:
-		res1.append([ele for ele in sub])
+if res1 and res1[-1][0] == sub[0]:
+res1[-1].extend(sub[1:])
+else:
+res1.append([ele for ele in sub])
 res1 = list(map(tuple, res1))
 
 # print('The extracted elements:', res1)
@@ -74,7 +75,7 @@ from collections import defaultdict
 
 mapp = defaultdict(list)
 for key, val in list1:
-	mapp[key].append(val)
+mapp[key].append(val)
 res2 = [(key, *val) for key, val in mapp.items()]
 
 # print('The extracted elements:', res2)
@@ -107,22 +108,22 @@ from itertools import groupby
 
 res4 = []
 for k, g in groupby(list1, key=lambda x: x[0]):
-	values = [v for _, v in g]
-	res4.append((k, *values))
+values = [v for _, v in g]
+res4.append((k, *values))
 
 # print('The extracted elements:', res4)
 
 # Python3 code to join tuples if similar initial element using recursion
 
 def join_tuples(list1, index):
-	if index == len(list1) - 1:
-		return list1
-	elif list1[index][0] == list1[index + 1][0]:
-		list1[index] += list1[index + 1][1:]
-		list1.pop(index + 1)
-		return join_tuples(list1, index)
-	else:
-		return join_tuples(list1, index + 1)
+if index == len(list1) - 1:
+return list1
+elif list1[index][0] == list1[index + 1][0]:
+list1[index] += list1[index + 1][1:]
+list1.pop(index + 1)
+return join_tuples(list1, index)
+else:
+return join_tuples(list1, index + 1)
 
 
 # list5 = [(5, 6), (5, 7), (6, 8), (6, 10), (7, 13)]

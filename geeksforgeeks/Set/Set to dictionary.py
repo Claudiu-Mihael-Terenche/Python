@@ -1,8 +1,7 @@
 set1 = {1, 2, 3, 4, 5}
-
 str1 = 'fg'
 
-res1 = {item: 'Geek' + str1 for item in set1} # converting set to dict
+res1 = {item: 'Geek' + str1 for item in set1}  # converting a set to dict
 
 print(res1)
 

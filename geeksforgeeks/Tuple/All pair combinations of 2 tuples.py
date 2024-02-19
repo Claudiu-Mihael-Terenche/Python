@@ -1,6 +1,7 @@
 from itertools import chain, product
 
-tup1 = (4, 5); tup2 = (7, 8)
+tup1 = (4, 5)
+tup2 = (7, 8)
 
 res1 = list(chain(product(tup1, tup2), product(tup2, tup1)))
 

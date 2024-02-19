@@ -1,18 +1,17 @@
 import hashlib
-from difflib import SequenceMatcher
 
-def hash_file(fileName1, fileName2):
 
+def hash_file(file_name1, file_name2):
     h1 = hashlib.sha1()
     h2 = hashlib.sha1()
 
-    with open(fileName1, 'rb') as file:
+    with open(file_name1, 'rb') as file:
         chunk = 0
         while chunk != b'':
             chunk = file.read(1024)
             h1.update(chunk)
 
-    with open(fileName2, 'rb') as file:
+    with open(file_name2, 'rb') as file:
         chunk = 0
         while chunk != b'':
             chunk = file.read(1024)
@@ -21,14 +20,15 @@ def hash_file(fileName1, fileName2):
 
 
 msg1, msg2 = \
-(hash_file('Acceptance to an AEC Program .pdf ', 'b7b13ff3-238f-4919-808e-0055a8030f4b.pdf'))
+    (hash_file('Acceptance to an AEC Program .pdf ', 'b7b13ff3-238f-4919-808e-0055a8030f4b.pdf'))
 
-if (msg1 != msg2):
+if msg1 != msg2:
     print('These files are not identical')
 else:
     print('These files are identical')
 
 '''
+from difflib import SequenceMatcher
 import hashlib
 from difflib import SequenceMatcher
 

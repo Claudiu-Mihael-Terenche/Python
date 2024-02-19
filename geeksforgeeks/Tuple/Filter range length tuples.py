@@ -1,10 +1,9 @@
 list1 = [(4,), (5, 6), (2, 3, 5), (5, 6, 8, 2), (5, 9)]
-
 i, j = 2, 3
 
-res1 = list(filter(lambda ele: j >= len(ele) >= i, list1))
+res1 = [sub for sub in list1 if j >= len(sub) >= i]
 
-res2 = [sub for sub in list1 if j >= len(sub) >= i]
+res2 = list(filter(lambda ele: j >= len(ele) >= i, list1))
 
 print('The tuple list after filtering range records:\n', res1, '\n', res2)
 

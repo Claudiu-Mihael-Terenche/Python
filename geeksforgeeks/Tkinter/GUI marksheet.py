@@ -1,5 +1,4 @@
 # Python program to create a GUI mark sheet using tkinter
-
 import tkinter as tk
 
 # creating a new tkinter window
@@ -36,7 +35,7 @@ def display():
 
 		# grid method is used for placing
 		# the widgets at respective positions
-		# in table like structure .
+		# in table like structure.
 		tk.Label(master, text="40").grid(row=3, column=4)
 		tot += 40
 
@@ -179,11 +178,6 @@ tk.Label(master, text="4").grid(row=6, column=3)
 
 tk.Label(master, text="Credit obtained").grid(row=2, column=4)
 
-# taking entries of name, reg, roll number respectively
-e1 = tk.Entry(master)
-e2 = tk.Entry(master)
-e3 = tk.Entry(master)
-
 # organizing them in the grid
 e1.grid(row=0, column=1)
 e2.grid(row=0, column=4)
@@ -200,4 +194,4 @@ tk.Label(master, text="SGPA").grid(row=8, column=3)
 
 master.mainloop()
 
-# this Marksheet can be snapshotted and printed out as a report card for the semester
+# this Marksheet can be a snapshot and printed out as a report card for the semester

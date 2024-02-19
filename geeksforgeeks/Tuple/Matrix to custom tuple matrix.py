@@ -1,5 +1,4 @@
 list1 = [[4, 5, 6], [6, 7, 3], [1, 3, 4]]
-
 add_list = ['Gfg', 'is', 'best']
 
 res = [(ele1, ele2) for ele1, sub in zip(add_list, list1) for ele2 in sub]

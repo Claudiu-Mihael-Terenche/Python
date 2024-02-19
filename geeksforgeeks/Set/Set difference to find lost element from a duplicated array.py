@@ -1,4 +1,5 @@
-list1 = [1, 4, 5, 7, 9]; list2 = [4, 5, 7, 9]
+list1 = [1, 4, 5, 7, 9]
+list2 = [4, 5, 7, 9]
 
 set1 = set(list1)
 set2 = set(list2)

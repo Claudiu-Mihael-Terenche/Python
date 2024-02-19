@@ -1,11 +1,14 @@
 tup = (5, 6, (5, 6), 7, (8, 9), 9)
 
 x = str(tup).translate({ord(item): None for item in '(),'}).split()
+
 y = list(map(int, x))
+
 z = list(set(y))
 
 res = dict()
-for item in z: res[item] = y.count(item)
+for item in z:
+    res[item] = y.count(item)
 
 print('The elements frequency:', res)
 

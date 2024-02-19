@@ -1,8 +1,8 @@
 list1 = [1, 4, 9, 10, 19]
-
 matrix1 = [[5, 6, 8], [8, 5, 3], [9, 10, 3]]
 
 res_list = list(map(str, list1))
+
 res_matrix = list(map(lambda sub: list(map(str, sub)), matrix1))
 
 print('The list after type casting is:', res_list)

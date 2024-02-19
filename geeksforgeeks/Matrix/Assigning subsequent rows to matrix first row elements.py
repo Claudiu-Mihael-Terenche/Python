@@ -9,7 +9,8 @@ a = list1[0]
 b = list1[1:len(list1)]
 
 res3 = dict()
-for i in range(0, len(a)): res3[a[i]] = b[i]
+for i in range(0, len(a)):
+    res3[a[i]] = b[i]
 
 print('The assigned matrix:\n', res1, '\n', res2, '\n', res3)
 

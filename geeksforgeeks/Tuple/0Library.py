@@ -1,4 +1,4 @@
-'''
+"""
 Built-In Methods
 Built-in-Method	Description
 index( )	Find in the tuple and returns the index of the given value where it’s available
@@ -25,24 +25,24 @@ print(a)
 print(b)
 print(c)
 
-tuple3 = tuple1 + tuple2 # concatinating of tuples
+tuple3 = tuple1 + tuple2 # concatenating of tuples
 
-Tuples VS Lists:
+tuples VS Lists:
 Similarities	Differences
 Functions that can be used for both lists and tuples:
 
 len(), max(), min(), sum(), any(), all(), sorted()
 
-Methods that cannot be used for tuples:
+methods that cannot be used for tuples:
 
 append(), insert(), remove(), pop(), clear(), sort(), reverse()
 
-Methods that can be used for both lists and tuples:
+methods that can be used for both lists and tuples:
 
 count(), Index()
 
 we generally use ‘tuples’ for heterogeneous (different) data types and ‘lists’ for homogeneous (similar) data types.
-Tuples can be stored in lists.	Iterating through a ‘tuple’ is faster than in a ‘list’.
-Lists can be stored in tuples.	‘Lists’ are mutable whereas ‘tuples’ are immutable.
-Both ‘tuples’ and ‘lists’ can be nested.	Tuples that contain immutable elements can be used as a key for a dictionary.
-'''
+tuples can be stored in lists.	iterating through a ‘tuple’ is faster than in a ‘list.’
+Lists can be stored in tuples.	‘lists’ are mutable whereas ‘tuples’ are immutable.
+both ‘tuples’ and ‘lists’ can be nested.	tuples that contain immutable elements can be used as a key for a dictionary.
+"""

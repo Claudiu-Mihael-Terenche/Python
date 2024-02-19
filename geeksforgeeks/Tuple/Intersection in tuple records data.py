@@ -1,4 +1,5 @@
-list1 = [('gfg', 1), ('is', 2), ('best', 3)]; list2 = [('i', 3), ('love', 4), ('gfg', 1)]
+list1 = [('gfg', 1), ('is', 2), ('best', 3)]
+list2 = [('i', 3), ('love', 4), ('gfg', 1)]
 
 set1 = set(list1)
 set2 = set(list2)

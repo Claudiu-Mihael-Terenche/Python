@@ -1,4 +1,5 @@
-list1 = [1, 2, 3, 4, 5]; list2 = [5, 6, 7, 8, 9]
+list1 = [1, 2, 3, 4, 5]
+list2 = [5, 6, 7, 8, 9]
 
 res1 = any(item in list2 for item in list1)
 
@@ -13,7 +14,7 @@ res2 = len(intersection) != 0
 
 print(res2)
 
-if (set1 & set2):
+if set1 & set2:
     print('True')
 else:
     print('False')
@@ -34,7 +35,7 @@ for item in list1:
 '''
 # Using the any() function and the list comprehension method
 def common_member(a, b):
-	return any(i in b for i in a)
+return any(i in b for i in a)
 
 a = [1, 2, 3, 4, 5]
 b = [5, 6, 7, 8, 9]
@@ -51,12 +52,12 @@ print(common_member(a, b)) # False
 # using set and property
 
 def common_member(a, b):
-    a_set = set(a)
-    b_set = set(b)
-    if (a_set & b_set):
-        return True
-    else:
-        return False
+a_set = set(a)
+b_set = set(b)
+if (a_set & b_set):
+return True
+else:
+return False
 
 
 a = [1, 2, 3, 4, 5]
@@ -74,20 +75,20 @@ print(common_member(a, b))
 # using traversal of list
 
 def common_data(list1, list2):
-    result = False
+result = False
 
-    # traverse in the 1st list
-    for x in list1:
+# traverse in the 1st list
+for x in list1:
 
-        # traverse in the 2nd list
-        for y in list2:
+# traverse in the 2nd list
+for y in list2:
 
-            # if one common
-            if x == y:
-                result = True
-                return result
+# if one common
+if x == y:
+result = True
+return result
 
-    return result
+return result
 
 
 # driver code

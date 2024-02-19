@@ -2,7 +2,7 @@ import sys
 
 set1 = {"A", 1, "B", 2, "C", 3}
 set2 = {"Geek1", "Raju", "Geek2", "Nikhil", "Geek3", "Deepanshu"}
-set3 = {(1, "Lion"), ( 2, "Tiger"), (3, "Fox")}
+set3 = {(1, "Lion"), (2, "Tiger"), (3, "Fox")}
 
 # Using getsizeof() function:
 print("Size of Set1: " + str(sys.getsizeof(set1)) + " bytes")

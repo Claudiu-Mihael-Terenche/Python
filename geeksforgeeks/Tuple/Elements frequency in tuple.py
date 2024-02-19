@@ -1,5 +1,4 @@
 from collections import Counter
-
 tup = (4, 5, 4, 5, 6, 6, 5, 5, 4)
 
 res = dict(Counter(tup))

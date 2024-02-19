@@ -1,6 +1,6 @@
 from operator import mod
-
-tup1 = (10, 4, 5, 6); tup2 = (5, 6, 7, 5)
+tup1 = (10, 4, 5, 6)
+tup2 = (5, 6, 7, 5)
 
 res1 = tuple(map(mod, tup1, tup2))
 

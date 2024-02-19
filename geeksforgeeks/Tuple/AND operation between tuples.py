@@ -1,12 +1,13 @@
 import operator
 
-tup1 = (10, 4, 5); tup2 = (2, 5, 18)
+tup1 = (10, 4, 5)
+tup2 = (2, 5, 18)
 
 res1 = tuple(map(operator.iand, tup1, tup2))
 
 res2 = tuple(map(lambda i, j: i & j, tup1, tup2))
 
-res3 = tuple(i & j for i,j in zip(tup1, tup2))
+res3 = tuple(i & j for i, j in zip(tup1, tup2))
 
 print('Resultant tuple after AND operation:\n', res1, '\n', res2, '\n', res3)
 

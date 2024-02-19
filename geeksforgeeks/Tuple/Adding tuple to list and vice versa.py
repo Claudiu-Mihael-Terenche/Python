@@ -1,18 +1,20 @@
-list0 = [5, 6, 7]; list1 = [5, 6, 7]; list3 = [5, 6, 7]
+list1 = [5, 6, 7]
+list2 = [5, 6, 7]
+list3 = [5, 6, 7]
 
-tup0 = (9, 10)
+tup = (9, 10)
 
-list1 += tup0
+list2 += tup
 
-res2 = tuple(list(tup0) + list0)
+list3.extend(list(tup))
 
-list3.extend(list(tup0))
+res = tuple(list(tup) + list1)
 
-tup4 = list(tup0)
-tup4.extend(list0)
-tup4 = tuple(tup4)
+tup1 = list(tup)
+tup1.extend(list1)
+tup1 = tuple(tup1)
 
-print('The container after addition:\n', list1, '\n', res2, '\n', list3, '\n', tup4)
+print('The container after addition:\n', list2, '\n', list3, '\n', res, '\n', tup1)
 
 '''
 # Method 1 : Using += operator [list + tuple]
