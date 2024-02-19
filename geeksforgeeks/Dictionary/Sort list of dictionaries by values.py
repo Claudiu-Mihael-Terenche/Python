@@ -1,14 +1,13 @@
 from operator import itemgetter
+list1 = [{'name': 'Nandini', 'age': 20}, {'name': 'Manjeet', 'age': 20}, {'name': 'Nikhil', 'age': 19}]
 
-list = [{'name': 'Nandini', 'age': 20}, {'name': 'Manjeet', 'age': 20}, {'name': 'Nikhil', 'age': 19}]
+print('The list printed sorting by age:', sorted(list1, key=itemgetter('age')))
+print('The list printed sorting by age and name:', sorted(list1, key=itemgetter('age', 'name')))
+print('The list printed sorting by age in descending order:', sorted(list1, key=itemgetter('age'), reverse=True))
 
-print('The list printed sorting by age:', sorted(list, key=itemgetter('age')))
-print('The list printed sorting by age and name:', sorted(list, key=itemgetter('age', 'name')))
-print('The list printed sorting by age in descending order:', sorted(list, key=itemgetter('age'), reverse=True))
-
-print('The list printed sorting by age:', sorted(list, key=lambda i: i['age']))
-print('The list printed sorting by age and name:', sorted(list, key=lambda i: (i['age'], i['name'])))
-print('The list printed sorting by age in descending order:', sorted(list, key=lambda i: i['age'], reverse=True))
+print('The list printed sorting by age:', sorted(list1, key=lambda i: i['age']))
+print('The list printed sorting by age and name:', sorted(list1, key=lambda i: (i['age'], i['name'])))
+print('The list printed sorting by age in descending order:', sorted(list1, key=lambda i: i['age'], reverse=True))
 
 '''
 # Python code demonstrate the working of sorted() and itemgetter

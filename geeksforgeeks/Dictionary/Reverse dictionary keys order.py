@@ -1,4 +1,4 @@
-dict1 = {'gfg' : 4, 'is' : 2, 'best' : 5}
+dict1 = {'gfg': 4, 'is': 2, 'best': 5}
 
 res = dict(reversed(list(dict1.items())))
 

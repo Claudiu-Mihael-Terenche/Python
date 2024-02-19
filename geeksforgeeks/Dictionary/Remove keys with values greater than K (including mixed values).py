@@ -1,5 +1,4 @@
 dict1 = {'Gfg': 3, 'is': 7, 'best': 10, 'for': 6, 'geeks': 'CS'}
-
 K = 6
 
 res1 = {key: val for key, val in dict1.items() if not (isinstance(val, int) and (val > K))}

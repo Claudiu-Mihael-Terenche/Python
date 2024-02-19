@@ -1,9 +1,9 @@
 from collections import Counter
-
 dict1 = {'Manjeet': [1, 4, 5, 6], 'Akash': [1, 8, 9], 'Nikhil': [10, 22, 4], 'Akshat': [5, 11, 22]}
 
 cnt = Counter()
-for idx in dict1.values(): cnt.update(idx)
+for idx in dict1.values():
+    cnt.update(idx)
 
 res1 = {idx: [key for key in j if cnt[key] == 1] for idx, j in dict1.items()}
 

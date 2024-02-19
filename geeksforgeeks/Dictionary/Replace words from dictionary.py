@@ -1,8 +1,7 @@
 str1 = 'geekforgeeks best for geeks'
+lookup_dict = {'best': 'good and better', 'geeks': 'all CS aspirants'}
 
-lookp_dict = {'best': 'good and better', 'geeks': 'all CS aspirants'}
-
-res = ' '.join(lookp_dict.get(ele, ele) for ele in str1.split())
+res = ' '.join(lookup_dict.get(ele, ele) for ele in str1.split())
 
 print('Replaced string:', res)
 
@@ -19,10 +18,10 @@ str1 = 'geekforgeeks best for geeks'
 
 # lookup Dictionary
 
-lookp_dict = {'best': 'good and better', 'geeks': 'all CS aspirants'}
+lookup_dict = {'best': 'good and better', 'geeks': 'all CS aspirants'}
 
 # one-liner to solve problem
-res = ' '.join(lookp_dict.get(ele, ele) for ele in str1.split())
+res = ' '.join(lookup_dict.get(ele, ele) for ele in str1.split())
 
 print('Replaced string:', res)
 '''

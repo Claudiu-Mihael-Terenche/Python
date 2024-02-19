@@ -1,6 +1,5 @@
 list1 = [['gfg', 'is', 'best'], ['gfg', 'is', 'for', 'geeks']]
-
-dict1 = {'gfg' : 5, 'is' : 10, 'best' : 13, 'for' : 2, 'geeks' : 15}
+dict1 = {'gfg': 5, 'is': 10, 'best': 13, 'for': 2, 'geeks': 15}
 
 res = [sum(dict1[word] if word.lower() in dict1 else 0 for word in sub) for sub in list1]
 

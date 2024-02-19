@@ -6,8 +6,6 @@ print('The dictionary after remove is:', dict1)
 
 print('Length', len(dict1))
 
-print(dict1)
-
 '''
 # Using the del
 

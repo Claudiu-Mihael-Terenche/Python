@@ -1,6 +1,5 @@
 from itertools import chain
-
-dict1 = {'gfg' : [5, 6, 7, 8], 'is' : [10, 11, 7, 5], 'best' : [6, 12, 10, 8], 'for' : [1, 2, 5]}
+dict1 = {'gfg': [5, 6, 7, 8], 'is': [10, 11, 7, 5], 'best': [6, 12, 10, 8], 'for': [1, 2, 5]}
 
 res1 = list(set(sum(dict1.values(), [])))
 

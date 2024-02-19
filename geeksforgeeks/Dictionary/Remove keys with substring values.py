@@ -1,5 +1,4 @@
 dict1 = {1: 'Gfg is best for geeks', 2: 'Gfg is good', 3: 'I love Gfg'}
-
 sub_list = ['love', 'good']
 
 res1 = dict()
@@ -12,9 +11,9 @@ res2 = {key: val for key, val in dict1.items() if not any(ele in val for ele in 
 res3 = dict(filter(lambda item: not any(sub in item[1] for sub in sub_list), dict1.items()))
 
 for key, value in list(dict1.items()):
-	for sub in sub_list:
-		if sub in value:
-			dict1.pop(key)
+    for sub4 in sub_list:
+        if sub4 in value:
+            dict1.pop(key)
 
 print('Filtered dictionary:\n', res1, '\n', res2, '\n', res3, '\n', dict1)
 
@@ -87,9 +86,9 @@ res3 = dict(filter(lambda item: not any(sub in item[1] for sub in sub_list), dic
 # sub_list = ['love', 'good']
 
 for key, value in list(dict1.items()):
-	for sub in sub_list:
-		if sub in value:
-			dict1.pop(key)
+for sub in sub_list:
+if sub in value:
+dict1.pop(key)
 
 print('Filtered dictionary:\n', res1, '\n', res2, '\n', res3, '\n', dict1)
 '''

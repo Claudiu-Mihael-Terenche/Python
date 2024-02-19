@@ -1,3 +1,5 @@
+import linecache
+
 file = open('gfg input file.txt')
 
 content = file.readlines()
@@ -9,8 +11,6 @@ print('Second line:\n', res1)
 res2 = content[0:3]
 
 print('First 3 lines:\n', *res2)
-
-import linecache
 
 res3 = linecache.getline('gfg input file.txt', 2)
 

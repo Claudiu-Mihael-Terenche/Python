@@ -1,10 +1,10 @@
 from collections import defaultdict
-
 dict1 = {'Gfg': [6, 7, 4], 'is': [4, 3, 2], 'best': [7, 6, 5]}
 
 temp1 = defaultdict(int)
 
-for key, val in dict1.items(): temp1[key] = sum(val)
+for key, val in dict1.items():
+    temp1[key] = sum(val)
 
 res1 = dict(sorted(temp1.items(), key=lambda x: x[1]))
 

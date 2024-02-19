@@ -1,11 +1,12 @@
-with open('gfg input file.txt', 'r') as input:
+with open('gfg input file.txt', 'r') as input0:
     with open('gfg output file 1.txt', 'w') as output:
-        for line in input:
+        for line in input0:
             output.write(line)
 
 output_file = open('gfg output file 2.txt', 'w')
 
-with open('gfg input file.txt', 'r') as scan: output_file.write(scan.read())
+with open('gfg input file.txt', 'r') as scan:
+    output_file.write(scan.read())
 
 output_file.close()
 

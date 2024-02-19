@@ -1,8 +1,9 @@
 list1 = [{"Gfg": [6, 7, 9], "is": 9, "best": 10},
          {"Gfg": [2, 0, 3], "is": 11, "best": 19},
-		 {"Gfg": [4, 6, 9], "is": 16, "best": 1}]
-
-K1 = 'Gfg'; idx = 2; K2 = 'best'
+         {"Gfg": [4, 6, 9], "is": 16, "best": 1}]
+K1 = 'Gfg'
+idx = 2
+K2 = 'best'
 
 res1 = sorted(list1, key=lambda ele: ele[K1][idx])
 
@@ -17,7 +18,7 @@ print('The required sort order:\n', res1, '\n', res2)
 
 list1 = [{"Gfg": [6, 7, 9], "is": 9, "best": 10},
          {"Gfg": [2, 0, 3], "is": 11, "best": 19},
-		 {"Gfg": [4, 6, 9], "is": 16, "best": 1}]
+{"Gfg": [4, 6, 9], "is": 16, "best": 1}]
 
 # printing original list
 # print("The original list : " + str(test_list))

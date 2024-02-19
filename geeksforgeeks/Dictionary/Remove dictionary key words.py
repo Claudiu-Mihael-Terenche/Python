@@ -1,5 +1,4 @@
 str1 = 'gfg is best for geeks'
-
 dict1 = {'geeks': 1, 'best': 6}
 
 str1 = ' '.join([word for word in str1.split() if word not in dict1.keys()])
