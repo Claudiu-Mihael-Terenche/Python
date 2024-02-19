@@ -6,7 +6,7 @@ for item in tup:
         (res1.append(item))
 
 temp = set()
-res2 = [ele for ele in tup if not(tuple(ele) in temp or temp.add(tuple(ele)))]
+res2 = [ele for ele in tup if not (tuple(ele) in temp or temp.add(tuple(ele)))]
 
 print('The unique lists tuple is:\n', res1, '\n', res2)
 

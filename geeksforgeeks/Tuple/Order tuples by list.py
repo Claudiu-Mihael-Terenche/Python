@@ -1,7 +1,5 @@
 from functools import reduce
-
 list1 = [('Gfg', 10), ('best', 3), ('CS', 8), ('Geeks', 7)]
-
 ord_list = ['Geeks', 'best', 'CS', 'Gfg']
 
 res1 = sorted(list1, key=lambda item: ord_list.index(item[0]))
@@ -18,7 +16,7 @@ print('The ordered tuple list:\n', res1, '\n', res2, '\n', res3)
 # Using lambda
 
 def order_tuples_by_list(list1, ord_list):
-	return sorted(list1, key=lambda item: ord_list.index(item[0]))
+return sorted(list1, key=lambda item: ord_list.index(item[0]))
 
 list1 = [('Gfg', 10), ('best', 3), ('CS', 8), ('Geeks', 7)]
 

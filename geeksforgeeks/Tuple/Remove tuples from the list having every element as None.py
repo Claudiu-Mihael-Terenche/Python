@@ -1,8 +1,8 @@
-list1 = [(None, 2), (None, None), (3, 4), (12, 3), (None, )]
+list1 = [(None, 2), (None, None), (3, 4), (12, 3), (None,)]
 
-res1 = list(filter(lambda sub: not all(ele == None for ele in sub), list1))
+res1 = [sub for sub in list1 if not all(ele is None for ele in sub)]
 
-res2 = [sub for sub in list1 if not all(ele == None for ele in sub)]
+res2 = list(filter(lambda sub: not all(ele is None for ele in sub), list1))
 
 print('Removed None tuples:\n', res1, '\n', res2)
 
