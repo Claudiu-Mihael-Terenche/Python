@@ -1,10 +1,8 @@
 from itertools import groupby
-
+import itertools
 str1 = 'geekksforgggeeks'
 
 res1 = [len(list(j)) for _, j in groupby(str1)]
-
-import itertools
 
 res2 = [len(list(group)) for key, group in itertools.groupby(str1)]
 

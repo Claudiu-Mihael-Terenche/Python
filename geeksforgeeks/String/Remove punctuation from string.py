@@ -1,20 +1,19 @@
 import string
-
 str1 = 'Gfg, is best: for ! Geeks ;'
 
 str1 = str1.translate({ord(item): None for item in string.punctuation})
 
 str2 = 'Gfg, is best: for ! Geeks ;'
 
-for punctuation in string.punctuation: str2 = str2.replace(punctuation, '')
+for punctuation in string.punctuation:
+    str2 = str2.replace(punctuation, '')
 
 str3 = 'Gfg, is best: for ! Geeks ;'
-
 punc = ',:!;'
 
 for item in str3:
-	if item in punc:
-		str3 = str3.replace(item, '')
+    if item in punc:
+        str3 = str3.replace(item, '')
 
 str4 = 'Gfg, is best : for ! Geeks ;'
 
@@ -62,8 +61,8 @@ punc3 = ',:!;'
 
 # removing punctuations in string using loop + punctuation string
 for item3 in str3:
-	if item3 in punc3:
-		str3 = str3.replace(item3, '')
+    if item3 in punc3:
+        str3 = str3.replace(item3, '')
 
 # printing result
 print('The string after punctuation filter:', str3)

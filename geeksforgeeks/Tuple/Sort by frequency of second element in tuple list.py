@@ -1,5 +1,4 @@
 from collections import Counter
-
 list1 = [(6, 5), (2, 7), (2, 5), (8, 7), (9, 8), (3, 7)]
 
 freq_map = Counter(val for key, val in list1)

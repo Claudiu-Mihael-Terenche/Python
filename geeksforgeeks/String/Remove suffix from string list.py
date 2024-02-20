@@ -1,14 +1,12 @@
-# Python3 code for suffix removal from string list using loop + remove() + endswith()
+# Python3 code for suffix removal from a string list using loop + remove() + endswith()
+list1 = ['allx', 'lovex', 'gfg', 'xit', 'is', 'bestx']
+suffix = 'x'
 
-list = ['allx', 'lovex', 'gfg', 'xit', 'is', 'bestx']
+for word in list1[:]:
+	if word.endswith(suffix):
+		list1.remove(word)
 
-suff = 'x'
-
-for word in list[:]:
-	if word.endswith(suff):
-		list.remove(word)
-
-print('List after removal of suffix elements:', list)
+print('List after removal of suffix elements:', list1)
 
 '''
 # Python3 code to demonstrate working of
@@ -21,12 +19,12 @@ test_list = ['allx', 'lovex', 'gfg', 'xit', 'is', 'bestx']
 # printing original list 
 print("The original list : " + str(test_list))
 
-# initialize suff
-suff = 'x'
+# initialize suffix
+suffix = 'x'
 
 # Suffix removal from String list
 # using list comprehension + endswith()
-res = [ele for ele in test_list if not ele.endswith(suff)]
+res = [ele for ele in test_list if not ele.endswith(suffix)]
 
 # printing result
 print("List after removal of suffix elements : "+ str(res))
@@ -35,11 +33,11 @@ print("List after removal of suffix elements : "+ str(res))
 # Remove prefix strings from list
 # using filter + endswith()
 
-# initialize suff
-suff = 'x'
+# initialize suffix
+suffix = 'x'
 
 def eva(x):
-	return not x.endswith(suff)
+	return not x.endswith(suffix)
 # initialize list 
 test_list = ['allx', 'lovex', 'gfg', 'xit', 'is', 'bestx']
 
@@ -63,12 +61,12 @@ test_list = ["allx", "lovex", "gfg", "xit", "is", "bestx"]
 print("The original list : " + str(test_list))
 
 # initialize suffix
-suff = "x"
+suffix = "x"
 
 res = []
 # Suffix removal from String list
 for i in test_list:
-	if(i[-1] != suff):
+	if(i[-1] != suffix):
 		res.append(i)
 
 # printing result
@@ -84,12 +82,12 @@ test_list = ["allx", "lovex", "gfg", "xit", "is", "bestx"]
 print("The original list : " + str(test_list))
 
 # initialize suffix
-suff = "x"
+suffix = "x"
 
 res = []
 # Suffix removal from String list
 for i in test_list:
-	if(i.find(suff)!=len(i)-1):
+	if(i.find(suffix)!=len(i)-1):
 		res.append(i)
 
 # printing result
@@ -98,8 +96,8 @@ print("List after removal of suffix elements : " + str(res))
 # Python3 code to demonstrate working of
 # Remove prefix strings from list using lambda functions
 
-# initialize suff
-suff = 'x'
+# initialize suffix
+suffix = 'x'
 
 # initialize list
 test_list = ['allx', 'lovex', 'gfg', 'xit', 'is', 'bestx']
@@ -109,7 +107,7 @@ print("The original list : " + str(test_list))
 
 # Remove prefix strings from list
 
-res = list(filter(lambda x: x[-1] != suff, test_list))
+res = list(filter(lambda x: x[-1] != suffix, test_list))
 
 # printing result
 print("List after removal of Kth character of each string : " + str(res))
@@ -124,12 +122,11 @@ test_list = ['allx', 'lovex', 'gfg', 'xit', 'is', 'bestx']
 print("The original list : " + str(test_list))
 
 # initialize suffix
-suff = 'x$'
+suffix = 'x$'
 
 # Suffix removal from String list using regular expressions
-res = [x for x in test_list if not re.search(suff, x)]
+res = [x for x in test_list if not re.search(suffix, x)]
 
 # printing result
 print("List after removal of suffix elements : " + str(res))
-#This code is contributed by Edula Vinay Kumar Reddy
 '''

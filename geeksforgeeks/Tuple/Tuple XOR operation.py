@@ -1,6 +1,7 @@
 from operator import xor
 
-tup1 = (10, 4, 6, 9); tup2 = (5, 2, 3, 3)
+tup1 = (10, 4, 6, 9)
+tup2 = (5, 2, 3, 3)
 
 res1 = tuple(map(xor, tup1, tup2))
 

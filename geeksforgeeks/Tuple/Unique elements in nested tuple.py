@@ -1,5 +1,4 @@
 from itertools import chain
-
 list1 = [(3, 4, 5), (4, 5, 7), (1, 4)]
 
 res1 = list(set(chain.from_iterable(list1)))

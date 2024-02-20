@@ -1,12 +1,11 @@
 str1 = 'Gfg is best. Gfg also has Classes now. Classes help understand better.'
-
-repl_dict1 = {'Gfg': 'It', 'Classes': 'They' }
+repl_dict1 = {'Gfg': 'It', 'Classes': 'They'}
 
 list1 = str1.split()
 
 res1 = ' '.join([repl_dict1.get(val)
-                if val in repl_dict1.keys() and list1.index(val) != idx
-                else val for idx, val in enumerate(list1)])
+                 if val in repl_dict1.keys() and list1.index(val) != idx
+                 else val for idx, val in enumerate(list1)])
 
 print('The string after replacing:', res1)
 

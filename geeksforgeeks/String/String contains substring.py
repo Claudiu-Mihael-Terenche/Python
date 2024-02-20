@@ -1,10 +1,7 @@
 str1 = 'geeks for geeks'
-
 substr1 = 'geeks'
 
-start = 0
-
-end = 1000
+start, end = 0, 1000
 
 print(str1.index('for', start, end))
 

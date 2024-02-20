@@ -1,24 +1,13 @@
 from collections import Counter
-
 str1 = 'Gfg is best. Geeks are good and Geeks like Gfg'
 
-res1 = Counter(str1.split())
+res1 = {key: str1.count(key) for key in str1.split()}
 
-print('The words frequency:', str(dict(res1)))
+res2 = str(dict(Counter(str1.split())))
 
-str2 = 'Gfg is best. Geeks are good and Geeks like Gfg'
+res3 = {word: str1.split().count(word) for word in set(str1.split())}
 
-str22 = str2.split()
-
-freq = {word: str22.count(word) for word in set(str22)}
-
-print('The words frequency:', str(freq))
-
-str3 = 'Gfg is best. Geeks are good and Geeks like Gfg'
-
-res3 = {key: str3.count(key) for key in str3.split()}
-
-print('The words frequency:', res3)
+print('The words frequency:\n', res1, '\n', res2, '\n',  res3)
 
 '''
 # Using counter() + split()

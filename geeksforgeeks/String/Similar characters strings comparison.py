@@ -1,15 +1,11 @@
 from collections import Counter
-
-str1 = 'e:e:k:s:g'; str2 = 'g:e:e:k:s'
-
+str1 = 'e:e:k:s:g'
+str2 = 'g:e:e:k:s'
 delim = ':'
 
-res1 = sorted(str1.split(':')) == sorted(str2.split(delim))
+res1 = Counter(str1) == Counter(str2)
 
-dict1 = {}; dict2 = {}
-dict1 = Counter(str1); dict2 = Counter(str2)
-
-res2 = dict1 == dict2
+res2 = sorted(str1.split(':')) == sorted(str2.split(delim))
 
 list1 = str1.split(delim)
 list2 = str2.split(delim)

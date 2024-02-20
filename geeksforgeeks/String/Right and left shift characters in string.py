@@ -1,6 +1,7 @@
 str1 = 'geeksforgeeks'
 
-r_rot = 7; l_rot = 3
+r_rot = 7
+l_rot = 3
 
 temp = (r_rot - l_rot) % len(str1)
 

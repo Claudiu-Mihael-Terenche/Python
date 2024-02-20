@@ -1,23 +1,21 @@
 list1 = [(1, 3, 4), (2, 4, 6), (3, 8, 1)]
-
 add_ele = 4
 
-res1 = [tuple(j + add_ele for j in sub ) for sub in list1]
+res1 = [tuple(j + add_ele for j in sub) for sub in list1]
 
 res2 = [tuple(map(lambda ele: ele + add_ele, sub)) for sub in list1]
 
 print('List after bulk update:\n', res1, '\n', res2, '\n')
 
-updated_list1 = [(a + 1, b + 1, c + 1) for idx, (a, b, c) in enumerate(list1)]
+res3 = [(a + 1, b + 1, c + 1) for idx, (a, b, c) in enumerate(list1)]
 
-print('The updated list using enumerate() and tuple unpacking:', updated_list1, '\n')
+print('The updated list using enumerate() and tuple unpacking:', res3, '\n')
 
-updated_list2 = [tuple(x + 1 for x in t) for t in zip(*list1)]
+res4 = [tuple(x + 1 for x in t) for t in zip(*list1)]
 
-print('The updated list using zip() function:', updated_list2, '\n')
+print('The updated list using zip() function:', res4, '\n')
 
 list2 = [(1, 3, 4), (2, 4, 6), (3, 8, 1)]
-
 new_elements1 = [(5, 7, 2), (6, 9, 3)]
 
 list2.extend(new_elements1)
@@ -25,28 +23,27 @@ list2.extend(new_elements1)
 print('List after using extend() method:', list2, '\n')
 
 list3 = [(1, 3, 4), (2, 4, 6), (3, 8, 1)]
-
 new_elements2 = (5, 7, 2)
-
 index_to_update = 1
 
 list3 = list3[:index_to_update] + [new_elements2] + list3[index_to_update + 1:]
 
 print('List after using slicing and concatenation:', list3, '\n')
 
-def update_tuples(tuples, new_val):
-	for i in range(len(tuples)):
-		x, y, z = tuples[i]
-		tuples[i] = (new_val, y, z)
-	return tuples
 
-tuples = [(1, 56, 'M'), (1, 14, 'F'), (2, 43, 'F'), (2, 10, 'M')]
+def update_tuples(tup, new_val):
+    for i in range(len(tup)):
+        x, y, z = tup[i]
+        tup[i] = (new_val, y, z)
+    return tup
 
-new_val = 5
 
-updated_tuples = update_tuples(tuples, new_val)
+tup1 = [(1, 56, 'M'), (1, 14, 'F'), (2, 43, 'F'), (2, 10, 'M')]
+new_val1 = 5
 
-print(updated_tuples)
+res5 = update_tuples(tup1, new_val1)
+
+print(res5)
 
 '''
 list1 = [(1, 3, 4), (2, 4, 6), (3, 8, 1)]
@@ -96,10 +93,10 @@ list3 = list3[:index_to_update] + [new_elements2] + list3[index_to_update + 1:]
 print('List after using slicing and concatenation:', list3, '\n')
 
 def update_tuples(tuples, new_val):
-	for i in range(len(tuples)):
-		x, y, z = tuples[i]
-		tuples[i] = (new_val, y, z)
-	return tuples
+for i in range(len(tuples)):
+x, y, z = tuples[i]
+tuples[i] = (new_val, y, z)
+return tuples
 
 tuples = [(1, 56, 'M'), (1, 14, 'F'), (2, 43, 'F'), (2, 10, 'M')]
 

@@ -1,6 +1,5 @@
 from collections import Counter
 from itertools import chain
-
 list1 = [[('hi', 'bye')], [('Geeks', 'forGeeks')], [('a', 'b')], [('hi', 'bye')], [('a', 'b')]]
 
 res = Counter(chain(*list1))

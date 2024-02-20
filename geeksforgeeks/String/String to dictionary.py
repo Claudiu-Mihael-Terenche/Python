@@ -8,13 +8,13 @@ str2 = 'Jan = January; Feb = February; Mar = March'
 
 dict2 = dict(subString.split('=') for subString in str2.split(';'))
 
-str31 = 'Jan, Feb, March'; str32 = 'January | February | March'
+str31 = 'Jan, Feb, March'
+str32 = 'January | February | March'
 
 keys = str31.split(', ')
 
 values = str32.split('|')
 
-dict3 = {}
 dict3 = dict(zip(keys, values))
 
 print('\n', dict1, '\n', dict2, '\n', dict3)
@@ -40,9 +40,9 @@ print(dictionary)
 # initialising string
 str = 'Jan = January; Feb = February; Mar = March'
 
-# At first the string will be splitted
+# At first the string will be split
 # at the occurrence of ';' to divide items
-# for the dictionaryand then again splitting
+# for the dictionary and then again splitting
 # will be done at occurrence of '=' which
 # generates key:value pair for each item
 dictionary = dict(subString.split('=') for subString in str.split(';'))

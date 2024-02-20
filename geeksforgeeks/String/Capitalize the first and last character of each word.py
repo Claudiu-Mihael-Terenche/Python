@@ -1,9 +1,7 @@
 # Python program to capitalize first and last character of each word of a string
 # using slicing and upper(),split() methods
-
-str = 'welcome to geeksforgeeks'
-
-word = str.split()
+str1 = 'welcome to geeksforgeeks'
+word = str1.split()
 
 res = []
 for item1 in word:

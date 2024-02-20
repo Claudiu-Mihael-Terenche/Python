@@ -1,5 +1,4 @@
 list1 = [(54, 2), (34, 55), (222, 23), (12, 45), (78, )]
-
 K = 2
 
 res1 = [sub for sub in list1 if all(len(str(ele)) == K for ele in sub)]

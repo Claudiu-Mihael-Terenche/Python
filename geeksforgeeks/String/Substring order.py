@@ -1,14 +1,15 @@
 str1 = 'geeksforgeeks'
-
 K = 'seek'
 
-def temp(sub): return ''.join(chr for chr in sub if chr in set(K))
+
+def temp(sub): return ''.join(char for char in sub if char in set(K))
+
 
 res1 = K in temp(str1)
 
 str1 = iter(str1)
 
-res2 = all(next((ele for ele in str1 if ele == chr), None) is not None for chr in K)
+res2 = all(next((ele for ele in str1 if ele == chr), None) is not None for char in K)
 
 print('Is substring in order:\n', res1, '\n', res2)
 

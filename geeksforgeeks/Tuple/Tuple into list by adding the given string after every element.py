@@ -1,7 +1,5 @@
 from itertools import chain
-
 tup = (5, 6, 7, 4, 9)
-
 K = 'Gfg'
 
 res1 = list(chain.from_iterable((ele, K) for ele in tup))

@@ -1,25 +1,25 @@
-str = 'amaama'
+str1 = 'amaama'
 
-half = int(len(str) / 2)
+half = int(len(str1) / 2)
 
-first_str = str[:half]
-second_str = str[half:]
+first_str = str1[:half]
+second_str = str1[half:]
 
-res1 = first_str == second_str
+res11 = first_str == second_str
 
-print('Is the string ' + str + ' symmetrical?:', res1)
+print('Is the string ' + str1 + ' symmetrical?:', res11)
 
-res2 = first_str == second_str[::-1]
+res12 = first_str == second_str[::-1]
 
-print('Is the string ' + str + ' palindrome?:', res2)
+print('Is the string ' + str1 + ' palindrome?:', res12)
 
-str1 = 'A man, a plan, a canal: Panama'
+str2 = 'A man, a plan, a canal: Panama'
 
-str1 = str1.translate({ord(item): None for item in ' ,:'}).lower()
+str2 = str2.translate({ord(item): None for item in ' ,:'}).lower()
 
-res = str1 == str1[::-1]
+res2 = str2 == str2[::-1]
 
-print('Is the string ' + str1 + ' palindrome?:', res)
+print('Is the string ' + str2 + ' palindrome?:', res2)
 
 '''
 # Using slicing method
@@ -32,15 +32,15 @@ second_str = str[half:]
 
 # symmetric
 if first_str == second_str:
-	print(str, 'string is symmetrical')
+print(str, 'string is symmetrical')
 else:
-	print(str, 'string is not symmetrical')
+print(str, 'string is not symmetrical')
 
 # palindrome
 if first_str == second_str[::-1]: # ''.join(reversed(second_str)) [slower]
-	print(str, 'string is palindrome')
+print(str, 'string is palindrome')
 else:
-	print(str, 'string is not palindrome')
+print(str, 'string is not palindrome')
 
 res1 = first_str == second_str
 print('Is the string ' + str + ' symmetrical?:', res1)

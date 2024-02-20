@@ -1,7 +1,5 @@
 from collections import Counter
-
 # Python3 code to print odd (even) frequency characters using list comprehension + Counter()
-
 str1 = 'geekforgeeks is best for geeks'
 
 res1 = [item for item, count in Counter(str1).items() if count % 2 == 0]

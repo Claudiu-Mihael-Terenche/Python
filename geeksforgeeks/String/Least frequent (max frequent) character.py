@@ -1,7 +1,5 @@
 from collections import Counter
-
 # Python 3 code to print the least frequent character in string using collections.Counter() + min()/max()
-
 str1 = 'GeeksforGeeks'
 
 # using collections.Counter() + min() to get least frequent character in string

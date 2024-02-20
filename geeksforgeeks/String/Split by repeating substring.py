@@ -1,13 +1,11 @@
 import re
-
 str1 = 'gfggfggfggfggfggfggfggfg'
-
 K = 'gfg'
 
 res1 = re.findall(K, str1)
 
 re = str1.count(K)
-res2 = [K]*re
+res2 = [K] * re
 
 temp = len(str1) // len(str(K))
 res3 = [K] * temp

@@ -1,6 +1,6 @@
 str1 = 'geeksforgeeks 33 is best'
 
-str11 = str1.replace(' ','')
+str11 = str1.replace(' ', '')
 
 res1 = len(str11)
 

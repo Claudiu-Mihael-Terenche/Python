@@ -1,45 +1,41 @@
 # Using replace()
-
-def Replace(str1):
-    str1 = str1.replace(', ', 'a')
-    str1 = str1.replace('.', ', ')
-    str1 = str1.replace('a', '.')
-    return str1
-
-
 str1 = '14, 625, 498.002'
-print(Replace(str1))
+
+str1 = str1.replace(', ', 'a')
+str1 = str1.replace('.', ', ')
+str1 = str1.replace('a', '.')
+
+print(str1)
 
 # Approach 2: using split and join
-
-def Replace(str2):
-	str2 = 'b'.join(str2.split(', '))
-	str2 =', '.join(str2.split('.'))
-	str2 ='.'.join(str2.split('b'))
-	return str2
-
 str2 = '14, 625, 498.002'
-print(Replace(str2))
 
-# Approach 3: Python code to replace, with . and vice-versa using simple for loop and join method
+str2 = 'b'.join(str2.split(', '))
+str2 = ', '.join(str2.split('.'))
+str2 = '.'.join(str2.split('b'))
 
-def Replace(str3):
+print(str2)
+
+
+# Approach 3: Python code to replace, with 'and' vice versa using simple for loop and join method
+
+def replace3(str03):
     arr = []
 
-    for item in str31:
-        if (item == '.'):
+    for item in str03:
+        if item == '.':
             arr.append(', ')
-        elif (item == ','):
+        elif item == ',':
             arr.append('.')
             continue
-        elif (item == ' '):
+        elif item == ' ':
             continue
         else:
             arr.append(item)
 
-    str32 = ''.join(arr)
-    return str32
+    str03 = ''.join(arr)
+    return str03
 
 
-str31 = '14, 625, 498.002'
-print(Replace(str31))
+str3 = '14, 625, 498.002'
+print(replace3(str3))

@@ -1,5 +1,4 @@
-# Python3 code to find all substrings frequency in string using list comprehension
-
+# Python3 code to find all substrings frequencies in string using list comprehension
 str1 = 'abababa'
 
 res = dict()

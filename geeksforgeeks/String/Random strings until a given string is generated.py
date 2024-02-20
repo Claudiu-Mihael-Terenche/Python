@@ -1,9 +1,7 @@
 import string
 import random
 import time
-
 possibleCharacters = string.ascii_lowercase + string.digits + string.ascii_uppercase + ' ., !?;:'
-
 str1 = 'Claudiu Mihael Terenche'
 
 attemptThis = ''.join(random.choice(possibleCharacters)
@@ -13,7 +11,7 @@ attemptNext = ''
 completed = False
 iteration = 0
 
-while completed == False:
+while not completed:
     print(attemptThis)
 
     attemptNext = ''

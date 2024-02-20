@@ -1,8 +1,6 @@
 from collections import Counter
-
 # Using Counter()
-
-str1 = 'Python is great and Java is also great'
+str1 = 'Python is great but Java is not good'
 
 res1 = ' '.join(Counter(str1.split()))
 

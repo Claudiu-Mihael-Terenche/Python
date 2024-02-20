@@ -1,27 +1,27 @@
 import random
 
+
 def generate_binary_string(n):
+    number = random.getrandbits(n)
 
-	number = random.getrandbits(n)
-
-	binary_string = format(number, '0b')
-	return binary_string
+    binary_string = format(number, '0b')
+    return binary_string
 
 
-n = 7
+n1 = 7
 
-print('Random binary string of length {}: {}'.format(n, generate_binary_string(n)))
+print('Random binary string of length {}: {}'.format(n1, generate_binary_string(n1)))
+
 
 def rand_key(p):
-
     key1 = ''
     for i in range(p):
         temp = str(random.randint(0, 1))
         key1 += temp
-    return (key1)
+    return key1
 
 
-str1 = rand_key(n)
+str1 = rand_key(n1)
 
 print('Desired length random binary string is:', str1)
 
@@ -30,11 +30,11 @@ print('Desired length random binary string is:', str1)
 import random
 
 def generate_binary_string(n):
-	# generate a random number with n bits
-	number = random.getrandbits(n)
-	# convert the number to binary
-	binary_string = format(number, '0b')
-	return binary_string
+# generate a random number with n bits
+number = random.getrandbits(n)
+# convert the number to binary
+binary_string = format(number, '0b')
+return binary_string
 
 # test the function
 n = 7

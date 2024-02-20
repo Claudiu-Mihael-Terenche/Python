@@ -1,5 +1,4 @@
 # Python code to print even length words using list comprehension
-
 str1 = 'geeks for geek'
 
 str2 = str1.split(' ')

@@ -1,4 +1,5 @@
-str1 = 'Alpha'; str2 = 'Beta'
+str1 = 'Alpha'
+str2 = 'Beta'
 
 res = (len((set(str1)).intersection(set(str2))))
 

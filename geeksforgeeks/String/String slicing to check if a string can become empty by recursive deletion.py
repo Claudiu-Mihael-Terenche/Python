@@ -1,23 +1,26 @@
-def checkEmpty(str1, pattern):
+def check_empty(str01, pattern):
 
-    if len(str1) == 0 and len(pattern) == 0: return 'true'
+    if len(str01) == 0 and len(pattern) == 0:
+        return 'true'
 
-    if len(pattern) == 0: return 'false'
+    if len(pattern) == 0:
+        return 'false'
 
-    while (len(str1) != 0):
+    while len(str01) != 0:
 
-        index = str1.find(pattern)
+        index = str01.find(pattern)
 
-        if (index == (-1)): return 'false'
+        if index == (-1):
+            return 'false'
 
-        str1 = str1[0:index] + str1[index + len(pattern):]
+        str01 = str01[0:index] + str01[index + len(pattern):]
     return 'true'
 
 
 if __name__ == '__main__':
     str1 = 'GEEGEEKSKS'
-    pattern = 'GEEKS'
-    print(checkEmpty(str1, pattern))
+    pattern1 = 'GEEKS'
+    print(check_empty(str1, pattern1))
 
 '''
 # Using find() method of string to search given pattern sub-string

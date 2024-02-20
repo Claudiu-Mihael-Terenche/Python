@@ -1,7 +1,5 @@
 import re
-
 str1 = 'GeeksforGeeks'
-
 vowels = 'aeiouAEIOU'
 
 res1 = len([item for item in str1 if item in vowels])
@@ -13,27 +11,24 @@ res2 = sum(str1.count(item) for item in vowels)
 print(res2)
 
 str3 = 'GeeksforGeeks'
-
 vowels3 = r'[aeiouAEIOU]'
 
 count3 = len(re.findall(vowels3, str3))
 
 print(count3)
 
-def vowel_count4(str4):
 
+def vowel_count4(str04):
     count4 = 0
-
     vowel4 = set('aeiouAEIOU')
 
-    for alphabet in str4:
+    for alphabet in str04:
         if alphabet in vowel4:
-            count4 += count4
+            count4 += 1
     print('No. of vowels:', count4)
 
 
 str4 = 'GeeksforGeeks'
-
 vowel_count4(str4)
 
 '''

@@ -1,6 +1,7 @@
 list1 = [(3, 4, 6, 723), (1, 2), (12345,), (134, 234, 34)]
 
-res1 = sorted(list1, key=lambda tup: sum([len(str(ele)) for ele in tup ]))
+res1 = sorted(list1, key=lambda tup: sum([len(str(ele)) for ele in tup]))
+
 
 def count_digs(tup): return sum([len(str(ele)) for ele in tup])
 

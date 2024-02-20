@@ -1,21 +1,21 @@
 import collections
 
-def check1(str1):
 
-	vowels = 'aeiou'
+def check1(str01):
+    vowels = 'aeiou'
 
-	if all(val in str1.lower() for val in vowels):
-		return 'Accepted'
-	return 'Not accepted'
+    if all(val in str01.lower() for val in vowels):
+        return 'Accepted'
+    return 'Not accepted'
 
 
 str1 = 'SEEquoiaL'
 
 print(check1(str1))
 
-def check2(str1):
 
-    if set('aeiou').issubset(set(str1.lower())):
+def check2(str02):
+    if set('aeiou').issubset(set(str02.lower())):
         return 'Accepted'
     return 'Not accepted'
 
@@ -24,26 +24,27 @@ if __name__ == '__main__':
     str1 = 'SEEquoiaL'
     print(check2(str1))
 
-def check3(str1):
-	if len(set(str1.lower()).intersection('aeiou')) >= 5:
-		return ('accepted')
-	else:
-		return ('not accepted')
+
+def check3(str03):
+    if len(set(str03.lower()).intersection('aeiou')) >= 5:
+        return 'accepted'
+    else:
+        return 'not accepted'
 
 
 if __name__ == '__main__':
-	str1 = 'SEEquoiaL'
-	print(check3(str1))
+    str1 = 'SEEquoiaL'
+    print(check3(str1))
 
-def check4(str1):
 
-    str1 = str1.lower()
+def check4(str04):
+    str04 = str04.lower()
 
     vowels = set('aeiou')
 
     s = set({})
 
-    for item in str1:
+    for item in str04:
         if item in vowels:
             s.add(item)
         else:
@@ -59,9 +60,9 @@ if __name__ == '__main__':
     str1 = 'SEEquoiaL'
     check4(str1)
 
-def check5(str1):
 
-    counter = collections.Counter(str1.lower())
+def check5(str05):
+    counter = collections.Counter(str05.lower())
 
     vowels = set('aeiou')
 
@@ -76,6 +77,7 @@ def check5(str1):
     else:
         print('Not accepted')
 
+
 str1 = 'SEEquoiaL'
 check5(str1)
 
@@ -85,10 +87,10 @@ check5(str1)
 # function for check if string is accepted or not using all() method
 
 def check(str1):
-	vowels1 = 'aeiou' # storing vowels
-	if all(vowel1 in str1.lower() for vowel1 in vowels1):
-		return 'Accepted'
-	return 'Not accepted'
+vowels1 = 'aeiou' # storing vowels
+if all(vowel1 in str1.lower() for vowel1 in vowels1):
+return 'Accepted'
+return 'Not accepted'
 
 
 # initializing string
@@ -115,16 +117,16 @@ if __name__ == '__main__':
 
 # Version 3
 def check(str3):
-	if len(set(str3.lower()).intersection('aeiou')) >= 5:
-		return ('accepted')
-	else:
-		return ('not accepted')
+if len(set(str3.lower()).intersection('aeiou')) >= 5:
+return ('accepted')
+else:
+return ('not accepted')
 
 
 # driver code
 if __name__ == '__main__':
-	str3 = 'geeksforgeeks'
-	print(check(str3))
+str3 = 'geeksforgeeks'
+print(check(str3))
 
 # Version 4: Python program to accept the strings which contains all the vowels
 

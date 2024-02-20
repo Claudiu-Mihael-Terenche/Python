@@ -1,5 +1,4 @@
 from itertools import chain
-
 list1 = [[(4, 5), (7, 8)], [(10, 13), (18, 17)], [(0, 4), (10, 1)]]
 
 res1 = list(zip(*chain.from_iterable(list1)))
@@ -10,7 +9,7 @@ matrix = ((1, 2, 3), (4, 5, 6), (7, 8, 9))
 
 res3 = list(tuple(map(lambda x: tuple(list(x)), matrix)))
 
-print('\n', res1, '\n', res2, '\n', res3) # Output: ([1, 2, 3], [4, 5, 6], [7, 8, 9])
+print('\n', res1, '\n', res2, '\n', res3)  # Output: ([1, 2, 3], [4, 5, 6], [7, 8, 9])
 
 '''
 # Python3 code to demonstrate working of

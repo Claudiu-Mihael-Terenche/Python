@@ -1,10 +1,9 @@
 list1 = [(4, 5), (4, ), (8, 6, 7), (1, ), (3, 4, 6, 7)]
-
 K = 1
 
 res1 = [ele for ele in list1 if len(ele) != K]
 
-res2 = list(filter(lambda x : len(x) != K, list1))
+res2 = list(filter(lambda x: len(x) != K, list1))
 
 print('Filtered list:\n', res1, '\n', res2)
 

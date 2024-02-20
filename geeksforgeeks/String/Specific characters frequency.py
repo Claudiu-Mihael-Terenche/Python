@@ -1,24 +1,22 @@
 import operator as op
 from collections import Counter
 from itertools import chain
-
 list1 = ['geeksforgeeks is best for geeks']
-
 item_list = ['e', 'b', 'g']
 
 d1 = dict()
 for item in item_list:
-    d1[item] = op.countOf(list1[0], item)
+    d1[item] = list1[0].count(item)
 res1 = d1
 
-res2 = {key: val for key, val in dict(Counter(''.join(list1))).items() if key in item_list}
-
-res3 = {key: val for key, val in dict(Counter(chain.from_iterable(list1))).items() if key in item_list}
-
-d4 = dict()
+d2 = dict()
 for item in item_list:
-    d4[item] = list1[0].count(item)
-res4 = d4
+    d2[item] = op.countOf(list1[0], item)
+res2 = d2
+
+res3 = {key: val for key, val in dict(Counter(''.join(list1))).items() if key in item_list}
+
+res4 = {key: val for key, val in dict(Counter(chain.from_iterable(list1))).items() if key in item_list}
 
 res5 = {}
 for item in ''.join(list1):

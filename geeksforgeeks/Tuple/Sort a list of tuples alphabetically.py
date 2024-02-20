@@ -1,4 +1,4 @@
-tup = [("Amana", 28), ("Zenat", 30), ("Abhishek", 29), ("Nikhil", 21), ("B", "C")]
+tup = [("Amanda", 28), ("Senate", 30), ("Abhishek", 29), ("Nikhil", 21), ("B", "C")]
 
 res = sorted(tup, key=lambda x: x[0])
 
@@ -15,11 +15,11 @@ print(res)
 
 # def Sort_Tuple(tup): return sorted(tup, key=lambda x: x[0])
 
-# tup = [("Amana", 28), ("Zenat", 30), ("Abhishek", 29), ("Nikhil", 21), ("B", "C")]
+# tup = [("Amanda", 28), ("Senate", 30), ("Abhishek", 29), ("Nikhil", 21), ("B", "C")]
 
 # print(Sort_Tuple(tup))
 
-tup = [("Amana", 28), ("Zenat", 30), ("Abhishek", 29), ("Nikhil", 21), ("B", "C")]
+tup = [("Amanda", 28), ("Senate", 30), ("Abhishek", 29), ("Nikhil", 21), ("B", "C")]
 
 res = sorted(tup, key=lambda x: x[0])
 
