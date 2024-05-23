@@ -42,19 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.strategy-after-fn-my-version.executor&quot;: &quot;Run&quot;,
-    &quot;Python.strategy-after-fn.executor&quot;: &quot;Run&quot;,
-    &quot;Python.strategy-after.executor&quot;: &quot;Run&quot;,
-    &quot;Python.strategy-before.executor&quot;: &quot;Run&quot;,
-    &quot;Python.strategy-final-version.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.strategy-after-fn-my-version.executor": "Run",
+    "Python.strategy-after-fn.executor": "Run",
+    "Python.strategy-after.executor": "Run",
+    "Python.strategy-before.executor": "Run",
+    "Python.strategy-final-version.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\claud\Documents\GitHub\Python\Collections\Strategy design pattern" />
